@@ -80,7 +80,11 @@
      font-size: 1.125rem;
      line-height: 1.75rem;
    }
-   
+   a {
+        color: #2d2d2d;
+        font-weight:  bold;
+        text-decoration: none;
+   }
    .text-xl {
      font-size: 1.25rem;
    }
@@ -1007,7 +1011,7 @@
      color: #2d2d2d;
      font-size: 1.4rem;
      line-height: 30px;
-     text-align: center;
+     text-align: start;
    }
    
    .wts-imgname.text-base.leading-5.font-medium.mt-0-125.white {
@@ -1026,7 +1030,7 @@
    }
    
    .text-desc {
-     margin-bottom: 53px;
+     margin-bottom: 35px;
      line-height: 22px;
    }
    
@@ -1052,7 +1056,8 @@
      display: -ms-flexbox;
      display: flex;
      margin-top: 182px;
-     margin-right: 0px;
+     margin-left: 12px;
+     margin-right: 12px;
      padding-top: 35px;
      padding-bottom: 30px;
      padding-left: 58px;
@@ -1062,7 +1067,8 @@
      -ms-flex-direction: column;
      flex-direction: column;
      border-radius: 50px;
-     background-color: #fcbc14;
+     background-color: #007179;
+     
    }
    
    .entermail {
@@ -1621,7 +1627,7 @@
        grid-template-columns: auto;
      }
    
-     .formblog-heading.mb-2-1875 {
+     .formblog-heading {
        padding-left: 10px;
        line-height: 2.8rem;
      }
@@ -1632,7 +1638,7 @@
    
      .wts-carddiv.pt-1-5.pl-2.pr-1-5625 {
        min-width: 100%;
-       padding-right: 0rem;
+       padding-right: 0.3rem;
      }
    
      .name-div.ml-0-875 {
@@ -1732,7 +1738,8 @@
        display: -ms-flexbox;
        display: flex;
        margin-top: 0px;
-       margin-right: 0px;
+       margin-left: 12px;
+       margin-right: 12px;
        padding: 20px 18px;
        -webkit-box-orient: vertical;
        -webkit-box-direction: normal;
