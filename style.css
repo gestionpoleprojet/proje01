@@ -859,6 +859,10 @@
    .img-detailsdiv.pl-1-3125 {
      padding-right: 18px;
    }
+
+   .img-rounded {
+     border-radius: 50%;
+   }
    
    .blog-brid {
      -webkit-box-pack: start;
@@ -892,8 +896,8 @@
      object-position: 50% 100%;
    }
    
-   .formblog-heading.mb-2-1875 {
-     padding-left: 5px;
+   .formblog-heading {
+     padding-left: 14px;
    }
    
    .formblog-div {
@@ -1658,7 +1662,7 @@
      }
    
      .formblog-heading {
-       padding-left: 10px;
+       padding-left: 14px;
        line-height: 2.8rem;
      }
    
