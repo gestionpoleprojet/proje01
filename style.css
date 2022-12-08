@@ -416,7 +416,14 @@
    .mb-0-875 {
      margin-bottom: 0.875rem;
    }
-   
+
+   .input{
+   width: 100%;
+   background-color: #fff;
+   border:none;
+   color: #fff;
+   border-radius: 20px;
+}
    
    .container-max-w-1060 {
      max-width: 1060px;
@@ -526,6 +533,14 @@
      text-decoration: underline;
      
      text-transform: none;
+   }
+
+   .control{
+   box-sizing: border-box;
+    clear: both;
+    font-size: 1rem;
+    position: relative;
+    text-align: inherit;
    }
    
    .hero-section {
@@ -970,7 +985,26 @@
      max-width: 259px;
      padding-top: 8px;
    }
+
+   .column.is-6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+   }
    
+   .textarea
+    {
+    max-height: max-content;
+    border: none;
+    height: 145px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 550px;
+    }
+    
+
    .wts-text.text-sm.leading-5 {
      max-width: 330px;
    }
@@ -1007,6 +1041,10 @@
      -webkit-align-items: flex-end;
      -ms-flex-align: end;
      align-items: flex-end;
+   }
+
+   .is-align-self-flex-end{
+    align-self: flex-end;
    }
    
    .wtsmaindiv.mt-6-125 {
@@ -1100,14 +1138,16 @@
      color: #fff;
    }
    
-   .entermail.text-base.leading-3.tracking-tighter {
+   .entermail {
      margin-bottom: 0px;
      border-radius: 29.5px;
+     
      background-color: hsla(0, 0%, 100%, 0.22);
    }
    
    .send-bttn {
-     margin-left: 5px;
+   margin-top: 12px;
+   margin-bottom: 6px;
      padding: 22px 37px 16px 38px;
      border-radius: 29.5px;
      background-color: #fff;
@@ -1137,12 +1177,9 @@
      display: none;
    }
    
-   .cta-form {
-     display: -webkit-box;
-     display: -webkit-flex;
-     display: -ms-flexbox;
-     display: flex;
-     gap: 5px;
+   #cta-form {
+    
+     width: 100%;
    }
    
    .footer {
@@ -1398,6 +1435,7 @@
        grid-row-gap: 0.8rem;
      }
    
+
      .navlogo-name {
        font-size: 22px;
      }
@@ -1563,8 +1601,8 @@
        margin-inline: 0px;
      }
      .wtc-image-large {
-        max-width: 105%;
-        margin-inline: -10px;
+        max-width: 90%;
+        margin-inline: 10px;
       }
    
      .wtc-maindiv {
