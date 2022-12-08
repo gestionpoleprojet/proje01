@@ -429,6 +429,10 @@
         color: #fff;
     }
    
+    .search-div {
+        flex-grow: 1;
+      }
+
    .container-max-w-1060 {
      max-width: 1060px;
    }
@@ -1006,6 +1010,7 @@
     min-width: 100%;
     max-width: 100%;
     max-height: 550px;
+ 
     }
     
 
@@ -1354,6 +1359,7 @@
     gap: 14px;
     display: flex;
     flex-direction: column;
+    width: 300px;
    }
 
    .image-6 {
@@ -1857,10 +1863,7 @@
        border-radius: 20px;
      }
    
-     .search-div {
-       width: 100%;
-       flex-grow: 1;
-     }
+     
    
      .post-box-image {
        display: none;
