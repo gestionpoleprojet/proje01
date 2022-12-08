@@ -850,6 +850,7 @@
    
    .numbers-image {
      width: 545px;
+     border-radius: 12px;
    }
    
    .our-number-left-block {
@@ -863,12 +864,13 @@
    
    .numbers-grid {
      margin-top: 131px;
-     grid-column-gap: 0px;
-     grid-row-gap: 0px;
+     grid-column-gap: 30px;
+     grid-row-gap: 20px;
      -ms-grid-columns: auto auto;
      grid-template-columns: auto auto;
      -ms-grid-rows: auto;
      grid-template-rows: auto;
+     align-items: center;
    }
    
    .calende-div {
@@ -1090,7 +1092,7 @@
    }
    
    .review-grid {
-     margin-left: 15px;
+     margin-left: 10px;
      justify-items: stretch;
      grid-column-gap: 15px;
      grid-row-gap: 0px;
@@ -1099,9 +1101,31 @@
      -ms-grid-rows: auto;
      grid-template-rows: auto;
    }
-   
+
+   .review{
+    border-top-left-radius: 30px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-color: #d8dcde;
+    display: block;
+    padding: 10px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    min-width: 341px;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-align: start;
+     -webkit-align-items: start;
+     -ms-flex-align: start;
+     align-items: flex-start;
+   }
+
    .text-desc {
-     margin-bottom: 35px;
+     margin-bottom: 20px;
      line-height: 22px;
    }
    
@@ -1459,7 +1483,7 @@
      }
    
      .nav-menu {
-       padding: 50px 10px 20px;
+       padding: 30px 10px 28px;
        -webkit-box-pack: center;
        -webkit-justify-content: center;
        -ms-flex-pack: center;
