@@ -423,7 +423,11 @@
    border:none;
    color: #fff;
    border-radius: 20px;
-}
+    }
+
+    .input::placeholder{
+        color: #fff;
+    }
    
    .container-max-w-1060 {
      max-width: 1060px;
@@ -990,7 +994,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 14px;
     color: white;
    }
    
@@ -1123,6 +1127,7 @@
      padding-top: 35px;
      padding-bottom: 30px;
      padding-left: 58px;
+     padding-right: 40px;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -webkit-flex-direction: column;
@@ -1134,7 +1139,7 @@
    }
    
    .entermail {
-     padding: 22px 135px 18px 23px;
+     padding: 22px 50px 18px 23px;
      color: #fff;
    }
    
@@ -1146,12 +1151,13 @@
    }
    
    .send-bttn {
-   margin-top: 12px;
-   margin-bottom: 6px;
-     padding: 22px 37px 16px 38px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+     padding: 17px 37px 16px 38px;
      border-radius: 29.5px;
      background-color: #fff;
      color: #2d2d2d;
+     font-weight: 600;
    }
    
    .post-box-image {
@@ -1344,6 +1350,12 @@
      text-decoration: none;
    }
    
+   .gap-3{
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+   }
+
    .image-6 {
      max-width: 34%;
    }
