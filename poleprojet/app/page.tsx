@@ -10,11 +10,10 @@ export default function Home() {
         <div className="hero-block">
           <div className="w-layout-grid hero-grid">
             <div className="card-image-block">
-              <img
+              <Image
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638df88f2b3c8ebe90e1a475_couple-grow-up-pump-idea-6870707-5634388.webp"
-                
                 width="480"
-                alt=""
+                alt="Realisation de projets en equipe"
                 className="hero_image"
               />
             </div>
@@ -47,20 +46,12 @@ export default function Home() {
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d69-33ac0d3b"
             className="client--image-wrapper"
           >
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com.png"
               loading="lazy"
               width="124"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 124px"
-              srcSet="
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-500.png   500w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-800.png   800w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-1080.png 1080w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-1600.png 1600w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-2000.png 2000w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-2600.png 2600w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-3200.png 3200w
-              "
+              
               alt=""
               className="client-image orange"
             />
@@ -69,7 +60,7 @@ export default function Home() {
             id="w-node-c4f8d844-2e7f-268b-fe01-c514c4a324e3-33ac0d3b"
             className="client--image-wrapper"
           >
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d36f5c38d287b14a77e_logo-onepoint.png"
               loading="lazy"
               width="126"
@@ -81,16 +72,12 @@ export default function Home() {
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d6b-33ac0d3b"
             className="client--image-wrapper"
           >
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo.png"
               loading="lazy"
               width="100"
               id="w-node-_2fdf6007-a222-4852-9f94-57c0242a3398-33ac0d3b"
-              srcSet="
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-500.png   500w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-800.png   800w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-1080.png 1080w
-              "
+              
               sizes="(max-width: 479px) 100vw, 100px"
               alt=""
               className="client-image orange"
@@ -100,17 +87,12 @@ export default function Home() {
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d6d-33ac0d3b"
             className="client--image-wrapper"
           >
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg.png"
               loading="lazy"
               width="125"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 125px"
-              srcSet="
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-500.png   500w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-800.png   800w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-1080.png 1080w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg.png        1280w
-              "
+              
               alt=""
               className="client-image orange"
             />
@@ -119,7 +101,7 @@ export default function Home() {
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d6f-33ac0d3b"
             className="client--image-wrapper"
           >
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0b02fbd74dabef858766_images%20(7).png"
               loading="lazy"
               width="37"
@@ -131,19 +113,12 @@ export default function Home() {
             id="w-node-_47069b56-0c47-2b92-a3bb-76b2a327321a-33ac0d3b"
             className="client--image-wrapper last_company"
           >
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg.png"
               loading="lazy"
               width="88"
               sizes="(max-width: 479px) NaNvw, 100vw"
-              srcSet="
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-500.png   500w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-800.png   800w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-1080.png 1080w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-1600.png 1600w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-2000.png 2000w,
-                https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg.png        2560w
-              "
+              
               alt=""
               className="client-image orange"
             />
@@ -161,7 +136,7 @@ export default function Home() {
           >
             
             <div className="card-mage-wrapper pt-2-875">
-              <img
+              <Image
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddfd5ba38ef0cb8e04206_girl-with-laptop-studying-on-online-course-5671935-4723231.webp"
                 loading="lazy"
                 alt=""
@@ -189,18 +164,19 @@ export default function Home() {
             className="card-div w-inline-block"
             >
             <div className="card-mage-wrapper pt-2-875">
-              <img
+              <Image
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddcff65555a1f871ea10d_young-businessman-pointing-to-the-side-with-both-fingers-4997923-4165653.webp"
                 loading="lazy"
                 sizes="(max-width: 479px) 100vw, 200px"
                 width="200"
-                srcSet="
-                  https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddcff65555a1f871ea10d_young-businessman-pointing-to-the-side-with-both-fingers-4997923-4165653-p-500.webp 500w,
-                  https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddcff65555a1f871ea10d_young-businessman-pointing-to-the-side-with-both-fingers-4997923-4165653.webp       630w
-                "
+                
                 alt=""
                 className="card-image businessman"
               />
+            
+
+
+
             </div>
             <div className="card-text-block mb-2-5625 pl-1-25 pr-1-3125">
               <div className="card-name text-3xl leading-10 font-bold mb-0-125">
@@ -225,7 +201,7 @@ export default function Home() {
           >
             
             <div className="card-mage-wrapper pt-2-875">
-              <img
+              <Image
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638de150c024ae45feef3adb_man-chilling-at-work-place-6816720-5603794.png"
                 loading="lazy"
                 alt=""
@@ -267,7 +243,7 @@ export default function Home() {
             >
           </div>
           <div className="image-wrapper">
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/60558359d5d4c6a85409c4d3_Group%2036.png"
               loading="lazy"
               alt=""
@@ -283,12 +259,12 @@ export default function Home() {
         <div className="wtsmaindiv mt-6-125">
           <div className="card-block-wrapper">
             <div className="card-content-block">
-              <h4 className="wts-head">Qu&#x27;en disent t&#x27;ils ?</h4>
+              <h2 className="wts-head">Qu&#x27;en disent t&#x27;ils ?</h2>
               <div className="wts-text text-sm leading-5">
                 2500 alumni sont passés par le pôle projets
               </div>
             </div>
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6055f280e08cca29fa33dc47_Group%2039.png"
               loading="lazy"
               alt=""
@@ -300,7 +276,7 @@ export default function Home() {
               <div className="reviewer-details">
                 <div className="logo-wrapper">
                   <div className="img-div">
-                    <img
+                    <Image
                       src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d1260bea1f6baa40a3711_Ellipse%201.png"
                       loading="lazy"
                       width="48"
@@ -334,7 +310,7 @@ export default function Home() {
               <div className="reviewer-details">
                 <div className="logo-wrapper">
                   <div className="img-div">
-                    <img
+                    <Image
                       src="/images/sarah100x100.webp"
                       loading="lazy"
                       alt=""
@@ -372,20 +348,20 @@ export default function Home() {
     <div className="lastsection wf-section whitebg">
       <div className="container-1060 w-container">
         <div className="lastsecmain-div">
-          <img
+          <Image
             src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6058007ab96d3f4025735c35_Group%2041.png"
             loading="lazy"
             alt=""
             className="letter-box-image"
-          /><img
+          /><Image
             src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6058007ab96d3f4025735c35_Group%2041.png"
             loading="lazy"
-            width="320"
+            width="446"
             alt=""
             className="post-box-image"
           />
           <div className="yellow-div">
-            <h4 className="projectesti-heading">Posez nous directement vos questions</h4>
+            <h2 className="projectesti-heading">Posez nous directement vos questions</h2>
             
             <form id="cta-form" data-dashlane-rid="57dc2c4819bcf10c" action="https://formspree.io/f/myyvrnnk" method="post" data-form-type="contact" 
             name="form" 
@@ -426,7 +402,7 @@ export default function Home() {
             <div className="formblog-div">
                 <h3 className="formblog-heading">L&#x27;actu</h3>
            
-                <iframe src="https://my.walls.io/h5wri?nobackground=1&amp;show_header=0" width="100%" height="800" frameBorder="0" scrolling="no" allowFullScreen={true}></iframe>
+                <iframe src="https://my.walls.io/h5wri?nobackground=1&amp;show_header=0" width="100%" height="800" frameBorder="0" scrolling="no" allowFullScreen={true} title="Fil_dactualité_ece"></iframe>
                 
 
                 {/*<Actu></Actu>*/}

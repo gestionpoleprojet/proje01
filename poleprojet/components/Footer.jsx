@@ -14,7 +14,7 @@ const Footer = () => (
             />
           </a>
           <div className="copyright-block">
-            <a className="footer-txt text-lg leading-5 font-bold" href="https://www.linkedin.com/company/jeece/mycompany/verification/">
+            <a className="footer-txt text-lg leading-5 font-bold" title="Site ECE Paris" alt="logo-ece-paris" href="https://www.linkedin.com/company/jeece/mycompany/verification/">
               2022 © JEECE
             </a>
           </div>

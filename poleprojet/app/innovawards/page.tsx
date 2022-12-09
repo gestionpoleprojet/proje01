@@ -117,7 +117,7 @@ export default function Innovawards() {
         <div className="wtsmaindiv mt-6-125">
           <div className="card-block-wrapper">
             <div className="card-content-block">
-              <h4 className="wts-head">Les dates clés</h4>
+              <h2 className="wts-head">Les dates clés</h2>
               <div className="wts-text text-sm leading-5">
                 Ne ratez rien de notre appel à projet en cours
               </div>

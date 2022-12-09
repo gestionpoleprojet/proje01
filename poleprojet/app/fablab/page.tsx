@@ -263,7 +263,7 @@ export default function Fablab() {
       <div className="wtsmaindiv mt-6-125">
         <div className="card-block-wrapper">
           <div className="card-content-block">
-            <h4 className="wts-head">Qu&#x27;en disent t&#x27;ils ?</h4>
+            <h2 className="wts-head">Qu&#x27;en disent t&#x27;ils ?</h2>
             <div className="wts-text text-sm leading-5">
               2500 alumni sont passés par le Fablab
             </div>
