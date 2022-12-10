@@ -19,6 +19,39 @@ export const navVariants = {
   },
 };
 
+export const navItems = {
+  '/':{
+      name: 'Accueil',
+      x: 0,
+      y: 0,
+      w: '94px',
+  },
+  '/pedagogie':{
+      name: 'Pédagogie',
+      x: 98,
+      y: 35,
+      w: '122px',
+  },
+  '/innovawards':{
+      name: 'Innov\'Awards',
+      x: 224,
+      y: 60,
+      w: '140px',
+  },
+  '/fablab':{
+      name: 'Fablab',
+      x: 367,
+      y: 0,
+      w: '94px',
+  },
+  '/contact':{
+      name: 'Contact',
+      x: 465,
+      y: 0,
+      w: '100px',
+  },
+}
+
 export const slideIn = (direction, type, delay, duration) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
