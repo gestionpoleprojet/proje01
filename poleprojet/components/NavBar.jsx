@@ -107,19 +107,19 @@ const NavBar = () => {
                     class={`nav-menu w-nav-menu ${menuOpen ? 'w--nav-menu-open': ''}`}
                     
                 >
-                    <Link href="/" className="navlink mr-2-5 w-nav-link">
+                    <Link href="/" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Accueil
                         </Link>
-                        <Link href="/pedagogie" className="navlink mr-2-5 w-nav-link">
+                        <Link href="/pedagogie" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Pédagogie
                         </Link>
-                        <Link href="/innovawards" className="navlink mr-2-5 w-nav-link">
+                        <Link href="/innovawards" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Innov&#x27;Awards
                         </Link>
-                        <Link href="/fablab" className="navlink mr-2-5 w-nav-link">
+                        <Link href="/fablab" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Fablab
                         </Link>
-                        <Link href="/contact" className="navlink mr-2-5 w-nav-link">
+                        <Link href="/contact" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Contact
                         </Link>
                     <a href="#" class="getstarted-bttn text-2xl leading-8  w-button">
