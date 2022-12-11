@@ -266,77 +266,15 @@ export default function Home() {
             >
           </div>
           
-          <div className="w-layout-grid review-grid">
-            <div
-              id="w-node-_2466505f-7d62-9efc-1ee1-9e80f249d40f-d135d194"
-              className="wts-carddiv pt-1-5 pl-2 pr-1-5625"
-            >
-              <div className="reviewer-details">
-                <div className="logo-wrapper date">
-                  <div className="name-div ml-0-875">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125 white"
-                    >
-                      Avril
-                    </div>
-                  </div>
-                  <div className="_2textblock">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
-                    >
-                      Ouverture de l&#x27;appel à projets
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              id="w-node-c8140bb6-9ec7-9fec-33f4-2edcc418b75c-d135d194"
-              className="wts-carddiv pt-1-5 pl-2 pr-1-5625"
-            >
-              <div className="reviewer-details">
-                <div className="logo-wrapper date">
-                  <div className="name-div ml-0-875 black">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125 white"
-                    >
-                      Juin
-                    </div>
-                  </div>
-                  <div className="_2textblock">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
-                    >
-                      Jury de sélection des projets
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              id="w-node-e92c4711-68a0-047f-e4f4-bde6a22fd02d-d135d194"
-              className="wts-carddiv pt-1-5 pl-2 pr-1-5625"
-            >
-              <div className="reviewer-details">
-                <div className="logo-wrapper date">
-                  <div className="name-div ml-0-875">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125 white"
-                    >
-                      Septembre
-                    </div>
-                  </div>
-                  <div className="_2textblock">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
-                    >
-                      Lancement des projets
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="image-wrapper">
+          <img
+            src="./images/chiffres.jpg"
+            loading="lazy"
+            width="93%"
+            alt=""
+            className=" "
+          />
+        </div>
           
         </div>
       </div>
