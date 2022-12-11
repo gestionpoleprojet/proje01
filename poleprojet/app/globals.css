@@ -49,20 +49,20 @@
      margin-bottom: 0px;
      font-family: Gilroy, sans-serif;
      color: #2d2d2d;
-     font-size: 3.75rem;
-     line-height: 3.875rem;
+     font-size: 2.5rem;
+     line-height: 3rem;
      font-weight: 700;
-     letter-spacing: -0.06rem;
+     letter-spacing: -0.04rem;
    }
    
    h3 {
      margin-top: 0px;
      margin-bottom: 0px;
      color: #2d2d2d;
-     font-size: 2.625rem;
-     line-height: 3.875rem;
+     font-size: 2.2rem;
+     line-height: 3rem;
      font-weight: 700;
-     letter-spacing: -0.0418rem;
+     letter-spacing: -0.04rem;
    }
    
    h4 {
@@ -71,7 +71,7 @@
      font-family: Gilroy, sans-serif;
      color: #2d2d2d;
      font-size: 2rem;
-     line-height: 3.875rem;
+     line-height: 3rem;
      font-weight: 700;
      letter-spacing: -0.0318rem;
    }
@@ -1198,8 +1198,8 @@
      display: -ms-flexbox;
      display: flex;
      margin-top: 182px;
-     margin-left: 12px;
-     margin-right: 12px;
+     margin-left: 14px;
+     margin-right: 14px;
      padding-top: 35px;
      padding-bottom: 30px;
      padding-left: 58px;
@@ -1239,8 +1239,8 @@
    .post-box-image {
      position: absolute;
      left: auto;
-     top: 25%;
-     right: 0;
+     top: 22%;
+     right: 0.2rem;
      bottom: auto;
    }
    
@@ -1912,8 +1912,8 @@
        display: -ms-flexbox;
        display: flex;
        margin-top: 0px;
-       margin-left: 12px;
-       margin-right: 12px;
+       margin-left: 14px;
+       margin-right: 14px;
        padding: 20px 18px;
        -webkit-box-orient: vertical;
        -webkit-box-direction: normal;

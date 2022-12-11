@@ -22,7 +22,7 @@ export default function Home() {
               className="hero-wrapper"
             >
               <h1 className="hero-title mb-2 hero-mobile">
-                Developons l&#x27;excellence de la pedagogie transversale par
+                Developpons l&#x27;excellence de la pedagogie transversale par
                 projets
               </h1>
               <div className="hero-text text-base leading-4">
@@ -265,14 +265,79 @@ export default function Home() {
               >Décourvrir la pédagogie</a
             >
           </div>
-          <div className="image-wrapper">
-            <img
-              src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/60558359d5d4c6a85409c4d3_Group%2036.png"
-              loading="lazy"
-              alt=""
-              className="numbers-image"
-            />
+          
+          <div className="w-layout-grid review-grid">
+            <div
+              id="w-node-_2466505f-7d62-9efc-1ee1-9e80f249d40f-d135d194"
+              className="wts-carddiv pt-1-5 pl-2 pr-1-5625"
+            >
+              <div className="reviewer-details">
+                <div className="logo-wrapper date">
+                  <div className="name-div ml-0-875">
+                    <div
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125 white"
+                    >
+                      Avril
+                    </div>
+                  </div>
+                  <div className="_2textblock">
+                    <div
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
+                    >
+                      Ouverture de l&#x27;appel à projets
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="w-node-c8140bb6-9ec7-9fec-33f4-2edcc418b75c-d135d194"
+              className="wts-carddiv pt-1-5 pl-2 pr-1-5625"
+            >
+              <div className="reviewer-details">
+                <div className="logo-wrapper date">
+                  <div className="name-div ml-0-875 black">
+                    <div
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125 white"
+                    >
+                      Juin
+                    </div>
+                  </div>
+                  <div className="_2textblock">
+                    <div
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
+                    >
+                      Jury de sélection des projets
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="w-node-e92c4711-68a0-047f-e4f4-bde6a22fd02d-d135d194"
+              className="wts-carddiv pt-1-5 pl-2 pr-1-5625"
+            >
+              <div className="reviewer-details">
+                <div className="logo-wrapper date">
+                  <div className="name-div ml-0-875">
+                    <div
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125 white"
+                    >
+                      Septembre
+                    </div>
+                  </div>
+                  <div className="_2textblock">
+                    <div
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
+                    >
+                      Lancement des projets
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -364,6 +429,41 @@ export default function Home() {
               </div>
             </div>
             
+            <div className="review pt-1-5 pl-2 pr-1-5625 ">
+              <div className="reviewer-details">
+                <div className="logo-wrapper">
+                  <div className="img-div">
+                    <img
+                      src="/images/sarah100x100.webp"
+                      loading="lazy"
+                      alt=""
+                      height="48"
+                      width="48"
+                      className="user-avatar img-rounded"
+                    />
+                  </div>
+                  <div className="alumni-name">
+                    <div
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
+                    >
+                      Sarah LE
+                    </div>
+                    <div className="wtsimg-job text-sm leading-5">
+                      Fondatrice de Tiko
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div className="text-desc text-sm mt-1-125 mb-3-4375">
+                “Le Fablab c’est avant tout un soutien technique dans la
+                réalisation d’un produit qui a les moyens de prototyper tout ce
+                que l’on peut imaginer et concevoir. Pour Kuantom, ce fût 4 ans
+                de recherche, 4 prototypages au sein du Fablab de l’ECE et
+                maintenant 4 brevets sur le marché.
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -371,6 +471,8 @@ export default function Home() {
     <div className="lastsection wf-section whitebg">
       <div className="container-1060 w-container">
         <div className="lastsecmain-div">
+          
+          <div className="yellow-div">
           <img
             src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6058007ab96d3f4025735c35_Group%2041.png"
             loading="lazy"
@@ -379,11 +481,10 @@ export default function Home() {
           /><img
             src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6058007ab96d3f4025735c35_Group%2041.png"
             loading="lazy"
-            width="446"
+            width="306"
             alt=""
             className="post-box-image"
           />
-          <div className="yellow-div">
             <h2 className="projectesti-heading">Posez nous directement vos questions</h2>
             
             <form id="cta-form" data-dashlane-rid="57dc2c4819bcf10c" action="https://formspree.io/f/myyvrnnk" method="post" data-form-type="contact" 
