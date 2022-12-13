@@ -1,9 +1,9 @@
 import {defineField, defineType} from 'sanity'
-import {MdLocalMovies as icon} from 'react-icons/md'
+import {MdPersonPin as icon} from 'react-icons/md'
 
 export default defineType({
-  name: 'project',
-  title: 'Project',
+  name: 'movie', // <-- enregistre comme 'movie' dans la base de données
+  title: 'Projets',
   type: 'document',
   icon,
   fields: [
@@ -13,13 +13,9 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 100,
-      },
+      name: 'valorisation',
+      title: 'Valorisation',
+      type: 'string',
     }),
     defineField({
       name: 'overview',
@@ -40,15 +36,19 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'externalId',
-      title: 'External ID',
-      type: 'number',
-    }),
-    defineField({
       name: 'crewMembers',
       title: 'Crew Members',
       type: 'array',
       of: [{type: 'crewMember'}],
+    }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+        maxLength: 100,
+      },
     }),
   ],
   preview: {
@@ -56,8 +56,8 @@ export default defineType({
       title: 'title',
       date: 'releaseDate',
       media: 'poster',
-      castName0: 'castMembers.0.person.name',
-      castName1: 'castMembers.1.person.name',
+      castName0: 'crewMembers.0.person.name',
+      castName1: 'crewMembers.1.person.name',
     },
     prepare(selection) {
       const year = selection.date && selection.date.split('-')[0]

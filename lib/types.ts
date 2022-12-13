@@ -1,8 +1,8 @@
 export type Project = {
     _id: string;
     valorisation: string;
-   title: string;
-   overview: any;
+    title: string;
+    overview: any;
     releaseDate: string;
     poster: any;
     crewMembers: CrewMember[];

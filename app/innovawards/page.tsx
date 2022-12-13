@@ -8,11 +8,8 @@ import { Project } from '../../lib/types';
 export default async function Page() {
 
 async function getProjects() {
-  const preview = false
-  console.log("getStaticProps");
-  const projects: Project[] = await getClient(preview).fetch(indexQuery);
-  console.log(projects);
-  return projects ;
+  const projects: Project[] = await getClient(false).fetch(indexQuery);
+  return projects;
 }
   const projects: Project[] = await getProjects();
   return (
