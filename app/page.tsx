@@ -432,11 +432,11 @@ export default function Home() {
                 <div className="column is-6">
                   <div className=" gap-3">
                     <div className="control ">
-                      <input name="Name" className="input entermail" type="text" placeholder="Votre nom" data-dashlane-rid="c9ac649c282e4a56" data-kwimpalastatus="alive" data-kwimpalaid="1670492392464-0" data-form-type="name" required/>
+                      <input name="Name" className="input entermail" type="text" placeholder="Votre nom" data-dashlane-rid="c9ac649c282e4a56"  data-kwimpalaid="1670492392464-0" data-form-type="name" required/>
                     </div>
                     <div className="">
                       <div className="control">
-                        <input name="Email" className="input entermail" type="email" placeholder="Votre email" data-dashlane-rid="8f8537d483b450a4" data-kwimpalastatus="alive" data-kwimpalaid="1670492392464-1" data-form-type="email" required/>
+                        <input name="Email" className="input entermail" type="email" placeholder="Votre email" data-dashlane-rid="8f8537d483b450a4"  data-kwimpalaid="1670492392464-1" data-form-type="email" required/>
                       </div>
                     </div>
                   </div>
@@ -464,9 +464,8 @@ export default function Home() {
             <div className="formblog-div">
                 <h3 className="formblog-heading">L&#x27;actu</h3>
            
-                <iframe src="https://my.walls.io/h5wri?nobackground=1&amp;show_header=0" width="100%" height="800" frameBorder="0" scrolling="no" allowFullScreen={true} title="Fil_dactualité_ece"></iframe>
+                <iframe src="https://my.walls.io/h5wri?nobackground=1&amp;show_header=0" width="100%" height="1200" frameBorder="0" scrolling="no" allowFullScreen={true} title="Fil_dactualité_ece"></iframe>
                 
-
                 {/*<Actu></Actu>*/}
             </div>
         </div>

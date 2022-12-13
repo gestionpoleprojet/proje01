@@ -79,16 +79,20 @@
    p {
      margin-bottom: 0px;
      color: #2d2d2d;
-     font-size: 1.125rem;
-     line-height: 1.75rem;
+     line-height: 1.3rem;
    }
    a {
-        color: #2d2d2d;
-        font-weight:  bold;
+        color: #2d2d2d; 
         text-decoration: none;
    }
+
+
+   .bold {
+        font-weight:  bold;
+   }
+   
    .text-xl {
-     font-size: 1.25rem;
+     font-size: 1.2rem;
    }
    
    .font-medium {
@@ -168,7 +172,7 @@
    }
    
    .text-lg {
-     font-size: 1.125rem;
+     font-size: 1rem;
    }
    
    .text-2xl {
@@ -440,29 +444,43 @@
    }
 
     .w-nav-overlay-open {
-    height: 100%;
+    height: 700px;
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
     display: block;
+    transition: all 400ms ease 0s;
+    z-index: -1;
+    }
+    .w-nav-overlayy {
+      position: absolute;
+      overflow: hidden;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      visibility: hidden;
+      transition: transform 400ms ease 0s;
+      transform: translateY(-500px) translateX(0px);
     }
 
     .w--nav-menu-open {
       position: relative;
       float: right;
-   
       display: block !important;
       position: absolute;
-      top: 100%;
       left: 0;
+      top: 0;
       right: 0;
       background: #007179;
       text-align: center;
       overflow: visible;
       min-width: 200px;
-      transform: translateY(0px) translateX(0px);
+      
       transition: transform 400ms ease 0s;
-    }
-
-    .nav-menu-open {
-     transform: translateY(0px) translateX(0px); transition: transform 400ms ease 0s;
     }
 
    .nav-wrapper {
@@ -572,11 +590,22 @@
    .navlink.mr-2-5 {
      margin-right: 0rem;
    }
+
+   .hover-card{
+      background-color: hsla(0, 0%, 100%, 0.22);
+      scale: 1.1;
+      
+   }
    
    .navlink.mr-2-5:hover {
      font-style: normal;
      text-transform: none;
      background-color: hsla(0, 0%, 100%, 0.10);
+   }
+   .navlink.mr-2-5:active {
+     font-style: normal;
+     text-transform: none;
+     background-color: none;
    }
 
    .underline{
@@ -827,7 +856,7 @@
    }
    
    .wtc-grid {
-     margin-left: -29px;
+ 
      -webkit-box-pack: start;
      -webkit-justify-content: start;
      -ms-flex-pack: start;
@@ -945,7 +974,7 @@
      -ms-flex-align: start;
      align-items: start;
      grid-column-gap: 33px;
-     grid-row-gap: 0px;
+     grid-row-gap: 30px;
      -ms-grid-columns: auto auto auto;
      grid-template-columns: auto auto auto;
      -ms-grid-rows: auto;
@@ -985,7 +1014,13 @@
      border-bottom-right-radius: 38px;
      border-top-left-radius: 38px;
      border: 1px solid #d8dcde;
+     transition: all 0.1s ease-in-out;
+     cursor: pointer;
    }
+   .blog-div-wrapper:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    
    
    .wts-carddiv.pt-1-5.pl-2.pr-1-5625 {
      display: -webkit-box;

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { PageWrapper } from '../../components/PageWrapper'
 
+
 export default function Pedagogie() {
 
   return (

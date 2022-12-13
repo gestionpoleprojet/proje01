@@ -11,7 +11,7 @@ export async function getServerSideProps() {
   
         const res = await fetch('https://walls.io/js/wallsio-widget-1.2.js');
         const src = await res.js();
-        const data_wallurl= await fectch("https://my.walls.io/h5wri?nobackground=1&amp;show_header=0&amp;initial_posts=5")
+        const data_wallurl= await fetch("https://my.walls.io/h5wri?nobackground=1&amp;show_header=0&amp;initial_posts=5")
   console.log(src)
 
   return {

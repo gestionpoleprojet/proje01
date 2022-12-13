@@ -54,7 +54,7 @@ const NavBar = () => {
                     >
                         <motion.nav
                             className="navanimation"
-                            layoutid="test"
+                            
                             initial={{ opacity: 0, x: navItems[pathname].x, y: 0 }}
                             animate={{
                                 opacity: 1,
@@ -97,15 +97,15 @@ const NavBar = () => {
 
 
             <div
-                class={`${menuOpen ? 'w-nav-overlay-open': 'w-nav-overlay'} `}
+                className={`${menuOpen ? 'w-nav-overlay-open': 'w-nav-overlayy'} `}
                 data-wf-ignore=""
                 id="w-nav-overlay-0"
-
+                onClick={handleMenuToggleClick}
             >
                 <nav
-                    role="navigation"
-                    class={`nav-menu w-nav-menu ${menuOpen ? 'w--nav-menu-open': ''}`}
-                    
+                    role="navigation"   
+                    className={`nav-menu w-nav-menu ${menuOpen ? 'w--nav-menu-open': ''}`}  
+                    data-nav-menu-open
                 >
                     <Link href="/" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Accueil
@@ -122,12 +122,11 @@ const NavBar = () => {
                         <Link href="/contact" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Contact
                         </Link>
-                    <a href="#" class="getstarted-bttn text-2xl leading-8  w-button">
-                        <strong class="bold-text">Déposer un projet</strong>
+                    <a href="#" className="getstarted-bttn text-2xl leading-8 w-button">
+                        <strong className="bold-text">Déposer un projet</strong>
                     </a>
                 </nav>
             </div>
-
         </div>
     );
 };

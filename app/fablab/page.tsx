@@ -12,7 +12,6 @@ export default function Fablab() {
           <div className="card-image-block mb-0-875">
             <img
               src="./images/trophy-printer.webp"
-              
               width="480"
               alt="3D-icon-printer"
               className="wtc-image-large"
