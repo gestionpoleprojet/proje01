@@ -8,7 +8,7 @@ import { Project } from '../../lib/types';
 export default async function Page() {
 
 async function getProjects() {
-  const projects: Project[] = await getClient(false).fetch(indexQuery);
+  const projects: Project[] = await getClient(false).fetch(indexQuery,{ cache: 'force-cache' });
   return projects;
 }
   const projects: Project[] = await getProjects();
