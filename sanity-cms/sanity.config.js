@@ -1,21 +1,16 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
-//import {googleMapsInput} from '@sanity/google-maps-input'
 import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'Poleprojet',
+  title: 'Sanity Project',
 
-  projectId: 'x6i8qkey',
+  projectId: 'sg36jkxi',
   dataset: 'production',
 
-  plugins: [
-    deskTool(),
-    visionTool(),
-    //googleMapsInput(),
-  ],
+  plugins: [deskTool(), visionTool()],
 
   schema: {
     types: schemaTypes,

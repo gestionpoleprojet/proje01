@@ -37,9 +37,9 @@ export default defineType({
     }),
     defineField({
       name: 'crewMembers',
-      title: 'Crew Members',
+      title: 'Membres de l\'équipe',
       type: 'array',
-      of: [{type: 'crewMember'}],
+      of: [{type: 'person'}],
     }),
     defineField({
       name: 'slug',
@@ -56,8 +56,8 @@ export default defineType({
       title: 'title',
       date: 'releaseDate',
       media: 'poster',
-      castName0: 'crewMembers.0.person.name',
-      castName1: 'crewMembers.1.person.name',
+      castName0: 'crewMembers.0.name',
+      castName1: 'crewMembers.1.name',
     },
     prepare(selection) {
       const year = selection.date && selection.date.split('-')[0]
