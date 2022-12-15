@@ -81,7 +81,7 @@ const NavBar = () => {
                         </Link>
                     </nav>
                     <Link
-                        href="#"
+                        href="/depot_projet"
                         className="getstarted-bttn text-2xl leading-8 small w-button"
                     >
                         <strong className="bold-text">Déposer un projet</strong>
@@ -97,7 +97,7 @@ const NavBar = () => {
 
 
             <div
-                className={`${menuOpen ? 'w-nav-overlay-open': 'w-nav-overlayy'} `}
+                className={`${menuOpen ? 'w-nav-overlay-open': 'w-nav-overlayy'} `} // VERSION RESPONSIVE
                 data-wf-ignore=""
                 id="w-nav-overlay-0"
                 onClick={handleMenuToggleClick}
@@ -122,7 +122,7 @@ const NavBar = () => {
                         <Link href="/contact" className="navlink mr-2-5 w-nav-link" onClick={handleMenuToggleClick}>
                             Contact
                         </Link>
-                    <a href="#" className="getstarted-bttn text-2xl leading-8 w-button">
+                    <a href="/depot_projet" className="getstarted-bttn text-2xl leading-8 w-button">
                         <strong className="bold-text">Déposer un projet</strong>
                     </a>
                 </nav>

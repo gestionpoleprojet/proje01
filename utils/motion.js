@@ -50,6 +50,13 @@ export const navItems = {
       y: 0,
       w: '100px',
   },
+
+  '/depot_projet':{
+    name: 'Contact',
+    x: 600,
+    y: 0,
+    w: '100px',
+},
 }
 
 export const slideIn = (direction, type, delay, duration) => ({
