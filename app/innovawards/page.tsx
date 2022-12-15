@@ -130,6 +130,7 @@ async function getProjects() {
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638e00954f9b6de468f7cca1_man-fasted-for-work-deadline-6816721-5603795.webp"
               loading="lazy"
               width="305"
+              height="305"
               alt=""
               className="message-icon-image"
             />
