@@ -1,144 +1,57 @@
-<!DOCTYPE html>
-<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Tue Dec 06 2022 17:12:23 GMT+0000 (Coordinated Universal Time) -->
-<html
-  data-wf-domain="pole-projets-ece.webflow.io"
-  data-wf-page="638d06875fd2fd8433ac0d3b"
-  data-wf-site="638d06865fd2fdfa5dac0d33"
->
-  <head>
-    <meta charset="utf-8" />
-    <title>Pole Projet ECE</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Webflow" name="generator" />
-    <link
-      href="./style.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!--[if lt IE 9
-      ]><script
-        src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
-        type="text/javascript"
-      ></script
-    ><![endif]-->
-    <script type="text/javascript">
-      !(function (o, c) {
-        var n = c.documentElement,
-          t = " w-mod-";
-        (n.className += t + "js"),
-          ("ontouchstart" in o ||
-            (o.DocumentTouch && c instanceof DocumentTouch)) &&
-            (n.className += t + "touch");
-      })(window, document);
-    </script>
-    <link
-      href="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f6caa4d5fc25f0d238627_favicon-32x32.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link
-      href="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f6e141aae653e950fddbf_android-chrome-256.png"
-      rel="apple-touch-icon"
-    />
-  </head>
-  <body>
-    <div
-      data-collapse="medium"
-      data-animation="default"
-      data-duration="400"
-      data-easing="ease"
-      data-easing2="ease"
-      role="banner"
-      class="navbar w-nav blue-ece"
-    >
-      <div class="container-max-w-1060 w-container">
-        <div class="nav-wrapper">
-          <div class="logo-wrapper">
-            <a href="#" class="brand w-nav-brand"
-              ><img
-                src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0a482b941e4e6e885124_Logo-PP-noir.png"
-                loading="lazy"
-                width="29"
-                sizes="29px"
-                srcset="
-                  https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0a482b941e4e6e885124_Logo-PP-noir-p-500.png 500w,
-                  https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0a482b941e4e6e885124_Logo-PP-noir.png       540w
-                "
-                alt=""
-                class="logo-image"
-              />
-              <div class="navlogo-name">Pôle Projet ECE.</div></a
-            >
-          </div>
-          <nav role="navigation" class="nav-menu w-nav-menu blue-ece">
-            <a href="/" class="navlink mr-2-5 w-nav-link">Accueil</a
-            ><a href="#" class="navlink mr-2-5 w-nav-link">Pédagogie</a
-            ><a
-              href="./innovawards.html"
-              class="navlink mr-2-5 w-nav-link"
-              >Innov&#x27;Awards</a
-            ><a href="./fablab.html" class="navlink mr-2-5 w-nav-link">Fablab</a
-            ><a href="#" class="navlink mr-2-5 w-nav-link">Contact</a
-            ><a
-              href="#"
-              class="getstarted-bttn text-2xl leading-8 small w-button"
-              ><strong class="bold-text">Déposer un projet</strong></a
-            >
-          </nav>
-          <div class="menu-button w-nav-button">
-            <div class="w-icon-nav-menu"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-section wf-section blue-ece">
-      <div class="container-1060 w-container">
-        <div class="hero-block">
-          <div class="w-layout-grid hero-grid">
-            <div class="card-image-block">
+import Image from 'next/image'
+import { PageWrapper } from '../components/PageWrapper'
+
+export default function Home() {
+
+  return (
+    <PageWrapper>
+    <div className="hero-section wf-section blue-ece">
+      <div className="container-1060 w-container">
+        <div className="hero-block">
+          <div className="w-layout-grid hero-grid">
+            <div className="card-image-block">
               <img
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638df88f2b3c8ebe90e1a475_couple-grow-up-pump-idea-6870707-5634388.webp"
-                loading="lazy"
                 width="480"
-                alt=""
-                class="hero_image"
+                alt="Realisation de projets en equipe"
+                className="hero_image"
               />
             </div>
             <div
               id="w-node-c2326c45-130c-31dc-a559-bdbd2d6eb97b-33ac0d3b"
-              class="hero-wrapper"
+              className="hero-wrapper"
             >
-              <h1 class="hero-title mb-2 hero-mobile">
-                Developons l&#x27;excellence de la pedagogie transversale par
+              <h1 className="hero-title mb-2 hero-mobile">
+                Developpons l&#x27;excellence de la pedagogie transversale par
                 projets
               </h1>
-              <div class="hero-text text-base leading-4">
+              <div className="hero-text text-base leading-4">
                 Permettre aux élèves-ingénieurs de collaborer sur des projets
                 d’innovations numériques et d&#x27;accompagner entreprises,
                 start-up, laboratoires et associations, dans une création de
                 valeur industrielle et académique.
               </div>
-              <a href="#" class="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong class="bold-text">Déposer un projet</strong></a
+              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
+                ><strong className="bold-text">Déposer un projet</strong></a
               >
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="logo-section wf-section">
-      <div class="container-1060 w-container">
-        <div class="client-image-wrapper">
+    <div className="logo-section wf-section whitebg">
+      <div className="container-1060 w-container">
+        <div className="client-image-wrapper">
           <div
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d69-33ac0d3b"
-            class="client--image-wrapper"
+            className="client--image-wrapper"
           >
             <img
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com.png"
               loading="lazy"
               width="124"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 124px"
-              srcset="
+              srcSet="
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-500.png   500w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-800.png   800w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-1080.png 1080w,
@@ -148,81 +61,81 @@
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-3200.png 3200w
               "
               alt=""
-              class="client-image orange"
+              className="client-image orange"
             />
           </div>
           <div
             id="w-node-c4f8d844-2e7f-268b-fe01-c514c4a324e3-33ac0d3b"
-            class="client--image-wrapper"
+            className="client--image-wrapper"
           >
             <img
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d36f5c38d287b14a77e_logo-onepoint.png"
               loading="lazy"
               width="126"
               alt=""
-              class="client-image orange"
+              className="client-image orange"
             />
           </div>
           <div
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d6b-33ac0d3b"
-            class="client--image-wrapper"
+            className="client--image-wrapper"
           >
             <img
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo.png"
               loading="lazy"
               width="100"
               id="w-node-_2fdf6007-a222-4852-9f94-57c0242a3398-33ac0d3b"
-              srcset="
+              srcSet="
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-500.png   500w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-800.png   800w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-1080.png 1080w
               "
               sizes="(max-width: 479px) 100vw, 100px"
               alt=""
-              class="client-image orange"
+              className="client-image orange"
             />
           </div>
           <div
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d6d-33ac0d3b"
-            class="client--image-wrapper"
+            className="client--image-wrapper"
           >
             <img
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg.png"
               loading="lazy"
               width="125"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 125px"
-              srcset="
+              srcSet="
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-500.png   500w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-800.png   800w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-1080.png 1080w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg.png        1280w
               "
               alt=""
-              class="client-image orange"
+              className="client-image orange"
             />
           </div>
           <div
             id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d6f-33ac0d3b"
-            class="client--image-wrapper"
+            className="client--image-wrapper"
           >
             <img
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0b02fbd74dabef858766_images%20(7).png"
               loading="lazy"
               width="37"
               alt=""
-              class="client-image orange"
+              className="client-image orange"
             />
           </div>
           <div
             id="w-node-_47069b56-0c47-2b92-a3bb-76b2a327321a-33ac0d3b"
-            class="client--image-wrapper last_company"
+            className="client--image-wrapper last_company"
           >
             <img
               src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg.png"
               loading="lazy"
               width="88"
               sizes="(max-width: 479px) NaNvw, 100vw"
-              srcset="
+              srcSet="
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-500.png   500w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-800.png   800w,
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-1080.png 1080w,
@@ -231,113 +144,115 @@
                 https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg.png        2560w
               "
               alt=""
-              class="client-image orange"
+              className="client-image orange"
             />
           </div>
         </div>
       </div>
     </div>
-    <div class="cards-section wf-section">
-      <div class="container-1060 w-container">
-        <div class="w-layout-grid cards-grid">
+    <div className="cards-section wf-section whitebg">
+      <div className="container-1060 w-container">
+        <div className="w-layout-grid cards-grid">
           <div
             id="w-node-_5887fbfd-43c6-3892-49af-2bae7151e79d-33ac0d3b"
             data-w-id="5887fbfd-43c6-3892-49af-2bae7151e79d"
-            class="card-div"
+            className="card-div"
           >
-            <div class="material-icon">
-              <strong class="bold-text-2">arrow_outward</strong>
-            </div>
-            <div class="card-mage-wrapper pt-2-875">
+            
+            <div className="card-mage-wrapper pt-2-875">
               <img
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddfd5ba38ef0cb8e04206_girl-with-laptop-studying-on-online-course-5671935-4723231.webp"
                 loading="lazy"
                 alt=""
-                class="image card-image"
+                className="image card-image"
               />
             </div>
-            <div class="card-text-block mb-2-5625 pl-1-25 pr-1-25">
-              <div class="card-name text-3xl leading-10 font-bold mb-0-125">
+            <div className="card-text-block mb-2-5625 pl-1-25 pr-1-25">
+              <div className="card-name text-3xl leading-10 font-bold mb-0-125">
                 Futur étudiants
               </div>
-              <div class="card-txt text-sm leading-4">
+              <div className="card-txt text-sm leading-4">
                 Découvrez notre pédagogie par projets et le programme de
                 l&#x27;école.<br />Participez dès maintenant à nos événements
                 (ECE Awards, ECE Cup)
               </div>
             </div>
+            <div className="material-icon">
+                <strong className="bold-text-2">arrow_outward</strong>
+              </div>
           </div>
           <a
             id="w-node-_1f9cbec7-895c-2802-1aed-ffbd63ac71cf-33ac0d3b"
             data-w-id="1f9cbec7-895c-2802-1aed-ffbd63ac71cf"
             href="./innovawards.html"
-            class="card-div w-inline-block"
+            className="card-div w-inline-block"
             >
-            <div class="card-mage-wrapper pt-2-875">
+            <div className="card-mage-wrapper pt-2-875">
               <img
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddcff65555a1f871ea10d_young-businessman-pointing-to-the-side-with-both-fingers-4997923-4165653.webp"
                 loading="lazy"
                 sizes="(max-width: 479px) 100vw, 200px"
                 width="200"
-                srcset="
+                srcSet="
                   https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddcff65555a1f871ea10d_young-businessman-pointing-to-the-side-with-both-fingers-4997923-4165653-p-500.webp 500w,
                   https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638ddcff65555a1f871ea10d_young-businessman-pointing-to-the-side-with-both-fingers-4997923-4165653.webp       630w
                 "
                 alt=""
-                class="card-image businessman"
+                className="card-image businessman"
               />
             </div>
-            <div class="card-text-block mb-2-5625 pl-1-25 pr-1-3125">
-              <div class="card-name text-3xl leading-10 font-bold mb-0-125">
+            <div className="card-text-block mb-2-5625 pl-1-25 pr-1-3125">
+              <div className="card-name text-3xl leading-10 font-bold mb-0-125">
                 Entreprise, labos,<br />associations
               </div>
-              <div class="card-txt text-sm leading-4">
+              <div className="card-txt text-sm leading-4">
                 Proposez un projet à nos étudiants.<br />Entrez en contact avec
                 nous. Ou bien découvrez nos formations et le Fablab du campus
                 Eiffel.
               </div>
             </div>
-            <div class="material-icon">
-                <strong class="bold-text-2">arrow_outward</strong>
+            <div className="material-icon">
+                <strong className="bold-text-2">arrow_outward</strong>
               </div>
             </a
           >
-          <div
+          <a
+            href="#"
             id="w-node-_5887fbfd-43c6-3892-49af-2bae7151e7b5-33ac0d3b"
             data-w-id="5887fbfd-43c6-3892-49af-2bae7151e7b5"
-            class="card-div"
+            className="card-div w-inline-block"
           >
-            <div class="material-icon">
-              <strong class="bold-text-2">arrow_outward</strong>
-            </div>
-            <div class="card-mage-wrapper pt-2-875">
+            
+            <div className="card-mage-wrapper pt-2-875">
               <img
                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638de150c024ae45feef3adb_man-chilling-at-work-place-6816720-5603794.png"
                 loading="lazy"
                 alt=""
-                class="card-image image test"
+                className="card-image image test"
               />
             </div>
-            <div class="card-text-block mb-2-5625 pl-1-5625 pr-1">
-              <div class="card-name text-3xl leading-10 font-bold mb-0-125">
+            <div className="card-text-block mb-2-5625 pl-1-5625 pr-1">
+              <div className="card-name text-3xl leading-10 font-bold mb-0-125">
                 Etudiant de l&#x27;ECE
               </div>
-              <div class="card-txt text-sm leading-4">
+              <div className="card-txt text-sm leading-4">
                 Déposez votre projet, Réservez le Fablab ou Découvrez les
                 projets des années précédentes
               </div>
             </div>
-            
-          </div>
+            <div className="material-icon">
+                <strong className="bold-text-2">arrow_outward</strong>
+              </div>
+        </a>
         </div>
       </div>
     </div>
-    <div class="wf-section">
-      <div class="container-1060 w-container">
-        <div class="w-layout-grid numbers-grid">
-          <div class="our-number-left-block">
-            <h2 class="wts-head">Le pôle en chiffres</h2>
-            <p class="our-numpara mt-1-75 mb-2-75">
+    <div className="wf-section whitebg">
+      <div className="container-1060 w-container">
+        <div className="w-layout-grid numbers-grid">
+          <div className="our-number-left-block">
+            <h2 className="wts-head">Le pôle en chiffres</h2>
+            <p className="our-numpara mt-1-75 mb-2-75">
               Depuis 2012, le programme Valorisation des Projets Etudiants (VPE)
               de l’ECE permet aux élèves ingénieurs de collaborer et
               d&#x27;accompagner les entreprises, startup, laboratoires et
@@ -346,29 +261,32 @@
             </p>
             <a
               href="#"
-              class="letstalk-bttn text-2xl leading-8 font-bold pt-1-1875 pb-0-8125 pl-3-8125 pr-3-9375 w-button"
+              className="letstalk-bttn text-2xl leading-8 font-bold pt-1-1875 pb-0-8125 pl-3-8125 pr-3-9375 w-button"
               >Décourvrir la pédagogie</a
             >
           </div>
-          <div class="numbers-image-wrapper">
-            <img
-              src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/60558359d5d4c6a85409c4d3_Group%2036.png"
-              loading="lazy"
-              alt=""
-              class="numbers-image"
-            />
-          </div>
+          
+          <div className="image-wrapper">
+          <img
+            src="./images/chiffres.jpg"
+            loading="lazy"
+            width="93%"
+            alt=""
+            className=" "
+          />
+        </div>
+          
         </div>
       </div>
     </div>
 
-    <div class="wf-section">
-      <div class="container-1160 w-container">
-        <div class="wtsmaindiv mt-6-125">
-          <div class="card-block-wrapper">
-            <div class="card-content-block">
-              <h4 class="wts-head">Qu&#x27;en disent t&#x27;ils ?</h4>
-              <div class="wts-text text-sm leading-5">
+    <div className="wf-section whitebg">
+      <div className="container-1160 w-container">
+        <div className="wtsmaindiv mt-6-125">
+          <div className="card-block-wrapper">
+            <div className="card-content-block">
+              <h2 className="wts-head">Qu&#x27;en disent t&#x27;ils ?</h2>
+              <div className="wts-text text-sm leading-5">
                 2500 alumni sont passés par le pôle projets
               </div>
             </div>
@@ -376,36 +294,37 @@
               src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6055f280e08cca29fa33dc47_Group%2039.png"
               loading="lazy"
               alt=""
-              class="message-icon-image"
+              className="message-icon-image"
             />
           </div>
-          <div class="w-layout-grid review-grid">
-            <div class="wts-carddiv pt-1-5 pl-2 pr-1-5625">
-              <div class="reviewer-details">
-                <div class="logo-wrapper">
-                  <div class="img-div">
+          <div className="w-layout-grid review-grid">
+            <div className="review pt-1-5 pl-2 pr-1-5625">
+              <div className="reviewer-details">
+                <div className="logo-wrapper">
+                  <div className="img-div">
                     <img
                       src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d1260bea1f6baa40a3711_Ellipse%201.png"
                       loading="lazy"
                       width="48"
+                      height="48"
                       alt=""
-                      class="user-avatar"
+                      className="user-avatar"
                     />
                   </div>
-                  <div class="alumni-name">
+                  <div className="alumni-name">
                     <div
-                      class="wts-imgname text-base leading-5 font-medium mt-0-125"
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
                     >
                       Valentin Lecompte
                     </div>
-                    <div class="wtsimg-job text-sm leading-5">
+                    <div className="wtsimg-job text-sm leading-5">
                       Fondateur de Kuantom
                     </div>
                   </div>
                 </div>
                 
               </div>
-              <div class="text-desc text-sm mt-1-125">
+              <div className="text-desc text-sm mt-1-125">
                 “Le Fablab c’est avant tout un soutien technique dans la
                 réalisation d’un produit qui a les moyens de prototyper tout ce
                 que l’on peut imaginer et concevoir. Pour Kuantom, ce fût 4 ans
@@ -413,31 +332,33 @@
                 maintenant 4 brevets sur le marché.
               </div>
             </div>
-            <div class="wts-carddiv pt-1-5 pl-2 pr-1-5625">
-              <div class="reviewer-details">
-                <div class="logo-wrapper">
-                  <div class="img-div">
+            <div className="review pt-1-5 pl-2 pr-1-5625 ">
+              <div className="reviewer-details">
+                <div className="logo-wrapper">
+                  <div className="img-div">
                     <img
-                      src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/60572ff8abb488774c0e020d_Oval%20Copy%206%20(1).png"
+                      src="/images/sarah100x100.webp"
                       loading="lazy"
                       alt=""
-                      class="user-avatar"
+                      height="48"
+                      width="48"
+                      className="user-avatar img-rounded"
                     />
                   </div>
-                  <div class="alumni-name">
+                  <div className="alumni-name">
                     <div
-                      class="wts-imgname text-base leading-5 font-medium mt-0-125"
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
                     >
-                      Karl Kalagin
+                      Sarah LE
                     </div>
-                    <div class="wtsimg-job text-sm leading-5">
-                      Fondateur de Tiko
+                    <div className="wtsimg-job text-sm leading-5">
+                      Fondatrice de Tiko
                     </div>
                   </div>
                 </div>
                
               </div>
-              <div class="text-desc text-sm mt-1-125 mb-3-4375">
+              <div className="text-desc text-sm mt-1-125 mb-3-4375">
                 “Le Fablab c’est avant tout un soutien technique dans la
                 réalisation d’un produit qui a les moyens de prototyper tout ce
                 que l’on peut imaginer et concevoir. Pour Kuantom, ce fût 4 ans
@@ -445,31 +366,34 @@
                 maintenant 4 brevets sur le marché.
               </div>
             </div>
-            <div class="wts-carddiv pt-1-5 pl-2 pr-1-5625">
-              <div class="reviewer-details">
-                <div class="logo-wrapper">
-                  <div class="img-div">
+            
+            <div className="review pt-1-5 pl-2 pr-1-5625 ">
+              <div className="reviewer-details">
+                <div className="logo-wrapper">
+                  <div className="img-div">
                     <img
-                      src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/60572ff8abb488774c0e020d_Oval%20Copy%206%20(1).png"
+                      src="/images/sarah100x100.webp"
                       loading="lazy"
                       alt=""
-                      class="user-avatar"
+                      height="48"
+                      width="48"
+                      className="user-avatar img-rounded"
                     />
                   </div>
-                  <div class="alumni-name">
+                  <div className="alumni-name">
                     <div
-                      class="wts-imgname text-base leading-5 font-medium mt-0-125"
+                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
                     >
-                      Karl Kalagin
+                      Sarah LE
                     </div>
-                    <div class="wtsimg-job text-sm leading-5">
-                      Fondateur de Tiko
+                    <div className="wtsimg-job text-sm leading-5">
+                      Fondatrice de Tiko
                     </div>
                   </div>
                 </div>
-                
+               
               </div>
-              <div class="text-desc text-sm mt-1-125 mb-3-4375">
+              <div className="text-desc text-sm mt-1-125 mb-3-4375">
                 “Le Fablab c’est avant tout un soutien technique dans la
                 réalisation d’un produit qui a les moyens de prototyper tout ce
                 que l’on peut imaginer et concevoir. Pour Kuantom, ce fût 4 ans
@@ -477,90 +401,78 @@
                 maintenant 4 brevets sur le marché.
               </div>
             </div>
+            
           </div>
         </div>
       </div>
     </div>
-    <div class="lastsection wf-section">
-      <div class="container-1060 w-container">
-        <div class="lastsecmain-div">
+    <div className="lastsection wf-section whitebg">
+      <div className="container-1060 w-container">
+        <div className="lastsecmain-div">
+          
+          <div className="yellow-div">
           <img
             src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6058007ab96d3f4025735c35_Group%2041.png"
             loading="lazy"
             alt=""
-            class="letter-box-image"
+            className="letter-box-image"
           /><img
             src="https://uploads-ssl.webflow.com/6051f4237c04701dd0f9616a/6058007ab96d3f4025735c35_Group%2041.png"
             loading="lazy"
-            width="320"
+            width="306"
             alt=""
-            class="post-box-image"
+            className="post-box-image"
           />
-          <div class="yellow-div">
-            <h4 class="projectesti-heading">Posez nous directement vos questions</h4>
-            <div class="cta-form">
-              <div class="search-div">
-                <div class="entermail text-base leading-3 tracking-tighter">
-                  Votre email
+            <h2 className="projectesti-heading">Posez nous directement vos questions</h2>
+            
+            <form id="cta-form" data-dashlane-rid="57dc2c4819bcf10c" action="https://formspree.io/f/myyvrnnk" method="post" data-form-type="contact" 
+            name="form" 
+            >
+              <div className="">
+                <div className="column is-6">
+                  <div className=" gap-3">
+                    <div className="control ">
+                      <input name="Name" className="input entermail" type="text" placeholder="Votre nom" data-dashlane-rid="c9ac649c282e4a56"  data-kwimpalaid="1670492392464-0" data-form-type="name" required/>
+                    </div>
+                    <div className="">
+                      <div className="control">
+                        <input name="Email" className="input entermail" type="email" placeholder="Votre email" data-dashlane-rid="8f8537d483b450a4"  data-kwimpalaid="1670492392464-1" data-form-type="email" required/>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=" search-div">
+                    <div className="control">
+                      <textarea name="Message" className="textarea entermail" placeholder="Votre message" data-dashlane-rid="45cd314440a2e16a" data-form-type="other" defaultValue="Bonjour, je suis intéressé par le Fablab de l'ECE Paris, auriez vous des portes ouvertes prévues bientôt ?"></textarea>
+                    </div>
+                  </div>
+                  <div className="column is-align-self-flex-end">
+                    <button type="submit" className="send-bttn tracking-tight text-lg leading-5 w-button" data-dashlane-rid="936df3f057465b53" data-dashlane-label="true" data-form-type="action">Envoyer</button>
+                  </div>
                 </div>
               </div>
-              <div class="search-div">
-                <div class="entermail text-base leading-3 tracking-tighter">
-                  Votre message
-                </div>
-              </div>
-              <a
-                href="#"
-                class="send-bttn tracking-tight text-lg leading-5 w-button"
-                >Envoyer</a
-              >
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="lastsection wf-section">
-        <div class="container-1060 mt-90 w-container">
-            <div class="formblog-div">
-                <h3 class="formblog-heading">L&#x27;actu</h3>
-            <script async src="https://walls.io/js/wallsio-widget-1.2.js" data-wallurl="https://my.walls.io/h5wri?nobackground=1&amp;show_header=0" data-title="My social wall" data-width="100%" data-autoheight="1" data-height="800" data-lazyload="1"></script>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer wf-section">
-      <div class="container-1060 w-container">
-        <div class="footer-wrapper">
-          <div class="logo-wrapper-footer">
-            <img
-              src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f6ea9bb7ca2d8fbfcb8f8_ECE_LOGO_2021_web-1-1.png"
-              loading="lazy"
-              alt=""
-              class="image-6"
-            />
-          </div>
-          <div class="copyright-block">
-            <div class="footer-txt text-lg leading-5 font-bold">
-              2022 © JEECE
-            </div>
+            </form>
+              
+   
+              
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=638d06865fd2fdfa5dac0d33"
-      type="text/javascript"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="script.js"
-      type="text/javascript"
-    ></script>
-    <!--[if lte IE 9
-      ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
-    ><![endif]-->
-  </body>
-</html>
+
+    <div className="lastsection wf-section whitebg">
+        <div className="container-1060 mt-90 w-container">
+            <div className="formblog-div">
+                <h3 className="formblog-heading">L&#x27;actu</h3>
+           
+                <iframe src="https://my.walls.io/h5wri?nobackground=1&amp;show_header=0" width="100%" height="1200" frameBorder="0" scrolling="no" allowFullScreen={true} title="Fil_dactualité_ece"></iframe>
+                
+                {/*<Actu></Actu>*/}
+            </div>
+        </div>
+    </div>
+
+   
+    
+    </PageWrapper>
+  )
+}
