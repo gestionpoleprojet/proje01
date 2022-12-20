@@ -14,3 +14,11 @@ export type Project = {
     role: string;
     profilePicture: string;
   };
+
+  export type Testimonial = {
+    _id: string;
+    title: string;
+    content: string;
+    poster: any;
+    role: string;
+  };

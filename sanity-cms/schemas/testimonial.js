@@ -1,63 +1,40 @@
 import {defineField, defineType} from 'sanity'
-import {MdLightbulb as icon} from 'react-icons/md'
+import {MdPersonPin as icon} from 'react-icons/md'
 
 export default defineType({
-  name: 'movie', // <-- enregistre comme 'movie' dans la base de données
-  title: 'Projets',
+  name: 'testimonial', // <-- enregistre comme 'movie' dans la base de données
+  title: 'Témoignages',
   type: 'document',
   icon,
   fields: [
     defineField({
       name: 'title',
-      title: 'Title',
+      title: 'Titre',
       type: 'string',
     }),
     defineField({
-      name: 'valorisation',
-      title: 'Valorisation',
+      name: 'role',
+      title: 'Role',
       type: 'string',
     }),
     defineField({
-      name: 'overview',
-      title: 'Overview',
+      name: 'content',
+      title: 'Contenu du témoignage',
       type: 'blockContent',
     }),
     defineField({
-      name: 'releaseDate',
-      title: 'Release date',
-      type: 'datetime',
-    }),
-    defineField({
       name: 'poster',
-      title: 'Poster Image',
+      title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
-      },
-    }),
-    defineField({
-      name: 'crewMembers',
-      title: 'Membres de l\'équipe',
-      type: 'array',
-      of: [{type: 'string'}],
-    }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 100,
       },
     }),
   ],
   preview: {
     select: {
       title: 'title',
-      date: 'releaseDate',
       media: 'poster',
-      castName0: 'crewMembers.0.name',
-      castName1: 'crewMembers.1.name',
     },
     prepare(selection) {
       const year = selection.date && selection.date.split('-')[0]

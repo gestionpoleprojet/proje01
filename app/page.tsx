@@ -1,8 +1,21 @@
 import Image from 'next/image'
 import { PageWrapper } from '../components/PageWrapper'
+import TemoignagesCardList from '../components/TemoignagesCardList';
+import { indexQueryTestimonial } from '../lib/queries';
+import { getClient } from '../lib/sanity-server';
+import { Testimonial } from '../lib/types';
 
-export default function Home() {
 
+
+export default async function Home() {
+
+  async function getTestimonials() {
+    const testimonial: Testimonial[] = await getClient(false).fetch(indexQueryTestimonial,{ cache: 'force-cache' });
+    console.log(testimonial);
+    return testimonial;
+  }
+  
+    const testimonial: Testimonial[] = await getTestimonials();
   return (
     <PageWrapper>
     <div className="hero-section wf-section blue-ece">
@@ -332,76 +345,7 @@ export default function Home() {
                 maintenant 4 brevets sur le marché.
               </div>
             </div>
-            <div className="review pt-1-5 pl-2 pr-1-5625 ">
-              <div className="reviewer-details">
-                <div className="logo-wrapper">
-                  <div className="img-div">
-                    <img
-                      src="/images/sarah100x100.webp"
-                      loading="lazy"
-                      alt=""
-                      height="48"
-                      width="48"
-                      className="user-avatar img-rounded"
-                    />
-                  </div>
-                  <div className="alumni-name">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
-                    >
-                      Sarah LE
-                    </div>
-                    <div className="wtsimg-job text-sm leading-5">
-                      Fondatrice de Tiko
-                    </div>
-                  </div>
-                </div>
-               
-              </div>
-              <div className="text-desc text-sm mt-1-125 mb-3-4375">
-                “Le Fablab c’est avant tout un soutien technique dans la
-                réalisation d’un produit qui a les moyens de prototyper tout ce
-                que l’on peut imaginer et concevoir. Pour Kuantom, ce fût 4 ans
-                de recherche, 4 prototypages au sein du Fablab de l’ECE et
-                maintenant 4 brevets sur le marché.
-              </div>
-            </div>
-            
-            <div className="review pt-1-5 pl-2 pr-1-5625 ">
-              <div className="reviewer-details">
-                <div className="logo-wrapper">
-                  <div className="img-div">
-                    <img
-                      src="/images/sarah100x100.webp"
-                      loading="lazy"
-                      alt=""
-                      height="48"
-                      width="48"
-                      className="user-avatar img-rounded"
-                    />
-                  </div>
-                  <div className="alumni-name">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
-                    >
-                      Sarah LE
-                    </div>
-                    <div className="wtsimg-job text-sm leading-5">
-                      Fondatrice de Tiko
-                    </div>
-                  </div>
-                </div>
-               
-              </div>
-              <div className="text-desc text-sm mt-1-125 mb-3-4375">
-                “Le Fablab c’est avant tout un soutien technique dans la
-                réalisation d’un produit qui a les moyens de prototyper tout ce
-                que l’on peut imaginer et concevoir. Pour Kuantom, ce fût 4 ans
-                de recherche, 4 prototypages au sein du Fablab de l’ECE et
-                maintenant 4 brevets sur le marché.
-              </div>
-            </div>
-            
+            <TemoignagesCardList testimonials = {testimonial}/>
           </div>
         </div>
       </div>

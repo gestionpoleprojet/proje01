@@ -1,7 +1,20 @@
 import Image from 'next/image'
 import { PageWrapper } from '../../components/PageWrapper';
+import TemoignagesCardList from '../../components/TemoignagesCardList';
+import { indexQueryTestimonial } from '../../lib/queries';
+import { getClient } from '../../lib/sanity-server';
+import { Testimonial } from '../../lib/types';
 
-export default function Fablab() {
+
+export default async function Fablab() {
+
+
+  async function getProjects() {
+    const testimonial: Testimonial[] = await getClient(false).fetch(indexQueryTestimonial,{ cache: 'force-cache' });
+    return testimonial;
+  }
+  
+    const testimonial: Testimonial[] = await getProjects();
 
   return (
   <PageWrapper>

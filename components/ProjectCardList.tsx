@@ -11,6 +11,5 @@ export default function ProjectCardList({ projects }: { projects: Project[] }) {
             <ProjectCard key={project._id} project={project} />
         ))}
         </>
-    );
-};
-
+    )
+        }

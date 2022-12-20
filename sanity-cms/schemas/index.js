@@ -1,8 +1,10 @@
 import project from './project'
 import blockContent from './blockContent'
-import person from './person'
+import link from './link'
+import testimonial from './testimonial'
 export const schemaTypes = [
     project,
     blockContent,
-    person,
+    link,
+    testimonial,
 ]
