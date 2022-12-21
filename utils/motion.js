@@ -53,9 +53,16 @@ export const navItems = {
 
   '/depot_projet':{
     name: 'Contact',
-    x: 600,
+    x: 601,
     y: 0,
     w: '100px',
+},
+
+'/associations':{
+  name: 'Associations',
+  x: 601,
+  y: 0,
+  w: '100px',
 },
 }
 

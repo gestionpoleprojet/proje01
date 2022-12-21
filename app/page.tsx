@@ -1,21 +1,17 @@
 import Image from 'next/image'
 import { PageWrapper } from '../components/PageWrapper'
 import TemoignagesCardList from '../components/TemoignagesCardList';
-import { indexQueryTestimonial } from '../lib/queries';
+import { indexQueryTestimonial, indexQueryLink } from '../lib/queries';
 import { getClient } from '../lib/sanity-server';
-import { Testimonial } from '../lib/types';
+import { Testimonial, Link } from '../lib/types';
 
 
 
 export default async function Home() {
 
-  async function getTestimonials() {
     const testimonial: Testimonial[] = await getClient(false).fetch(indexQueryTestimonial,{ cache: 'force-cache' });
-    console.log(testimonial);
-    return testimonial;
-  }
+    const link: Link = await getClient(false).fetch(indexQueryLink,{ cache: 'force-cache' });
   
-    const testimonial: Testimonial[] = await getTestimonials();
   return (
     <PageWrapper>
     <div className="hero-section wf-section blue-ece">
@@ -44,8 +40,8 @@ export default async function Home() {
                 start-up, laboratoires et associations, dans une création de
                 valeur industrielle et académique.
               </div>
-              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong className="bold-text">Déposer un projet</strong></a
+              <a href= {link.lien} className="getstarted-bttn text-2xl leading-8 w-button"
+                ><strong className="bold-text">{link.texte}</strong></a
               >
             </div>
           </div>

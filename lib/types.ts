@@ -22,3 +22,9 @@ export type Project = {
     poster: any;
     role: string;
   };
+
+  export type Link = {
+    _id: string;
+    lien: string;
+    texte: string;
+  };

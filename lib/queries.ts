@@ -16,6 +16,11 @@ const testiFields = `
   poster,
 `;
 
+const linkFields = ` 
+  _id,
+  lien,
+  texte,
+`;
 // <-- enregistre comme 'movie' dans la base de données
 export const indexQuery = `
 *[_type == "movie"] | order(date desc, _updatedAt desc) {
@@ -25,4 +30,14 @@ export const indexQuery = `
 export const indexQueryTestimonial = `
 *[_type == "testimonial"] | order(date desc, _updatedAt desc) {
   ${testiFields}
+}`;
+
+export const indexQueryTestimonialFablab = `
+*[_type == "testimonialfablab"] | order(date desc, _updatedAt desc) {
+  ${testiFields}
+}`;
+
+export const indexQueryLink = `
+*[_type == "link"] | order(date desc, _updatedAt desc) {
+  ${linkFields}
 }`;
