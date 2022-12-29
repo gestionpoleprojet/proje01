@@ -633,6 +633,9 @@
    .whitebg{
       background-color: #fff;
    }
+   .graybg{
+      background-color: #2d2d2d;
+   }
    
    .hero-title {
      margin-bottom: 35px;
@@ -692,11 +695,19 @@
    .getstarted-bttn.text-2xl.leading-8 {
      margin-left: -2px;
      padding: 13px 48px 13px 47px;
-     background-color: #fff;
      -webkit-transition: all 300ms ease;
      transition: all 300ms ease;
      font-size: 1.1rem;
      cursor: pointer;
+   }
+   .depot-btn {
+     padding: 13px 48px 13px 47px;
+     -webkit-transition: all 300ms ease;
+     transition: all 300ms ease;
+     font-size: 1.1rem;
+     cursor: pointer;
+     margin-left: 2px;
+     padding: 10px 25px;
    }
    
    .getstarted-bttn.text-2xl.leading-8:hover {
@@ -706,6 +717,11 @@
      background-clip: border-box;
      -webkit-text-fill-color: inherit;
    }
+   .invert-btn {
+     background-color: #2d2d2d;
+     color: #fff;
+     border-radius: 32px;
+    }
    
    .getstarted-bttn.text-2xl.leading-8.small {
      margin-left: 2px;
@@ -1016,10 +1032,19 @@
      border: 1px solid #d8dcde;
      transition: all 0.1s ease-in-out;
      cursor: pointer;
+     padding-bottom: 1rem;
    }
-   .blog-div-wrapper:hover {
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
+    .blog-div-wrapper:hover #lien {
+      background-color: #292b2c;
+      color: #fff;
+      transition-property: all;
+      transition-duration: 220ms;
+      transition-timing-function: ease-in;
+      border-radius: 30px;
+      padding: 0.5rem 1rem;
     }
+
     
    
    .wts-carddiv.pt-1-5.pl-2.pr-1-5625 {

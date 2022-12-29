@@ -12,4 +12,4 @@ export default function ProjectCardList({ projects }: { projects: Project[] }) {
         ))}
         </>
     )
-        }
+}

@@ -5,7 +5,8 @@ export type Project = {
     overview: any;
     releaseDate: string;
     poster: any;
-    crewMembers: CrewMember[];
+    crewMembers: String[];
+    lien: string;
   };
 
   export type CrewMember = {
@@ -18,7 +19,7 @@ export type Project = {
   export type Testimonial = {
     _id: string;
     title: string;
-    content: string;
+    content: any;
     poster: any;
     role: string;
   };

@@ -30,32 +30,32 @@ export const navItems = {
       name: 'Pédagogie',
       x: 98,
       y: 35,
-      w: '122px',
+      w: '120px',
   },
   '/innovawards':{
       name: 'Innov\'Awards',
       x: 224,
       y: 60,
-      w: '140px',
+      w: '137px',
   },
   '/fablab':{
       name: 'Fablab',
       x: 367,
       y: 0,
-      w: '94px',
+      w: '92px',
   },
   '/contact':{
       name: 'Contact',
-      x: 465,
+      x: 462,
       y: 0,
-      w: '100px',
+      w: '102px',
   },
 
   '/depot_projet':{
     name: 'Contact',
-    x: 601,
+    x: 602,
     y: 0,
-    w: '100px',
+    w: '180px',
 },
 
 '/associations':{

@@ -7,11 +7,13 @@ import { Project } from '../../lib/types';
 
 export default async function Page() {
 
-async function getProjects() {
-  const projects: Project[] = await getClient(false).fetch(indexQuery,{ cache: 'force-cache' });
-  return projects;
-}
+  async function getProjects() {
+    const projects: Project[] = await getClient(false).fetch(indexQuery,{ cache: 'no-cache' });
+    return projects;
+  }
+
   const projects: Project[] = await getProjects();
+
   return (
     <PageWrapper>
     <div className="hero-section wf-section blue-ece">
@@ -103,13 +105,13 @@ async function getProjects() {
             </div>
             <div className="image-wrapper">
               <img
-                src="/images/orange_viva.webp"
+                src="/images/barge.webp"
                 loading="lazy"
-                height="507"
-                width="442"
-                
+                height="566"
+                width="943"
+            
                 alt=""
-                className="wtc-image"
+                className="wtc-image card-image"
               />
             </div>
           </div>
@@ -248,7 +250,6 @@ async function getProjects() {
         </div>
       </div>
     </div>
-    
     
     </PageWrapper>
 

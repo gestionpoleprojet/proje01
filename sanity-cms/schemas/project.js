@@ -9,7 +9,7 @@ export default defineType({
   fields: [
     defineField({
       name: 'title',
-      title: 'Title',
+      title: 'Nom du projet',
       type: 'string',
     }),
     defineField({
@@ -42,13 +42,11 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 100,
-      },
+      name: 'lien',
+      title: 'Lien web',
+      type: 'string',
+      description: 'Entrez l\'URL du site ou de la video', 
+
     }),
   ],
   preview: {

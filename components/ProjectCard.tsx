@@ -46,21 +46,21 @@ export default function ProjectCard({ project }: { project: Project }) {
             </div>
             <div className="_2textblock text-sm leading-5">
                 <PortableText value={project.overview} {...sanityConfig} />
-
             </div>
-                <div className=" mt-0-4375 mb-0-875">
+            { project.lien ? (
+                <div  className="mt-0-4375 ">
                     <a
-                        href="https://www.snow-smart.fr/"
+                        href={project.lien}
+                        id="lien"
                         target="_blank"
                         rel="noreferrer"
-                        className="bold w-inline-block"
+                        className="bold w-inline-block rounded-2xl px-1.5 py-1"
                     >
-                    <div className="link-text">Voir le site</div>
-                        
+                        <div className="link-text">Voir le site</div>
                     </a>
                 </div>
+            ) : (null)}
             </div>
         </div>
-
     )
 }

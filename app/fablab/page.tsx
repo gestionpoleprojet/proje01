@@ -1,21 +1,21 @@
 import Image from 'next/image'
 import { PageWrapper } from '../../components/PageWrapper';
-import TemoignagesCardList from '../../components/TemoignagesCardList';
+import TestimonialCardList from '../../components/TestimonialCardList';
+import TestimonialCard from '../../components/TestimonialCard';
 import { indexQueryTestimonialFablab } from '../../lib/queries';
 import { getClient } from '../../lib/sanity-server';
 import { Testimonial } from '../../lib/types';
 
-
 export default async function Fablab() {
 
-
-  async function getProjects() {
-    const testimonial: Testimonial[] = await getClient(false).fetch(indexQueryTestimonialFablab,{ cache: 'force-cache' });
-    return testimonial;
+  async function getTestimonials() {
+    const testimonials: Testimonial[] = await getClient(false).fetch(indexQueryTestimonialFablab,{ cache: 'no-cache' });
+    return testimonials;
   }
   
-    const testimonial: Testimonial[] = await getProjects();
-
+  const testimonials: Testimonial[] = await getTestimonials();
+  console.log(testimonials);
+  
   return (
   <PageWrapper>
   <div className="hero-section wf-section red-fablab">
@@ -283,13 +283,11 @@ export default async function Fablab() {
           
         </div>
         <div className="w-layout-grid review-grid">
-        <TemoignagesCardList
-        testimonials={testimonial}
-        />
+           <TestimonialCardList testimonials={testimonials} /> 
         </div>
       </div>
     </div>
   </div>
   </PageWrapper>
-  );
+  )
 }

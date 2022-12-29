@@ -2,11 +2,11 @@ import project from './project'
 import blockContent from './blockContent'
 import link from './link'
 import testimonial from './testimonial'
-import testimonialFablab from './testimonialFablab'
+import testimonialfablab from './testimonialfablab'
 export const schemaTypes = [
     project,
     blockContent,
     link,
     testimonial,
-    testimonialFablab,
+    testimonialfablab,
 ]

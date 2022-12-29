@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { navVariants, navItems } from "../utils/motion";
+import { navVariants, navItems, ctacolor} from "../utils/motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -82,7 +82,7 @@ const NavBar = () => {
                     </nav>
                     <Link
                         href="/depot_projet"
-                        className="getstarted-bttn text-2xl leading-8 small w-button"
+                        className={`depot-btn  ${pathname == "/depot_projet" ? "invert-btn" : "getstarted-bttn"}`}
                     >
                         <strong className="bold-text">Déposer un projet</strong>
                     </Link>
@@ -97,7 +97,7 @@ const NavBar = () => {
 
 
             <div
-                className={`${menuOpen ? 'w-nav-overlay-open': 'w-nav-overlayy'} `} // VERSION RESPONSIVE
+                className={`${menuOpen ? 'w-nav-overlay-open': 'w-nav-overlayy'} `} // VERSION MOBILE
                 data-wf-ignore=""
                 id="w-nav-overlay-0"
                 onClick={handleMenuToggleClick}

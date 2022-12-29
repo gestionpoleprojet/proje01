@@ -10,19 +10,12 @@ export default function Depot_Projet() {
       <div className="container-1060 w-container">
         <div className="hero-block">
           <div className="w-layout-grid hero-grid">
-            <img
-              src="/images/contact.webp"
-              width="551"
-              id="w-node-_89b30bd8-a8db-67a3-614b-b071ede6a2cf-d135d194"
-              alt="couple-working-on-laptop"
-              className="image-5"
-            />
-            <div
+          <div
               id="w-node-_138c1701-d088-8486-1d67-68f5d6bd7ca0-d135d194"
               className="hero-wrapper"
             >
               <h1 className="hero-title mb-2 hero-mobile">
-                Des questions ? Contactez-nous !
+                Je suis un étudiant de l'ECE
               </h1>
               <div className="hero-text text-base leading-4">
                 Depuis 2012, le programme Valorisation des Projets Etudiants
@@ -32,7 +25,26 @@ export default function Depot_Projet() {
                 création de valeur industrielle et académique partagée
               </div>
               <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong className="bold-text">contact@poleprojet.ece.fr</strong></a
+                ><strong className="bold-text">Déposer mon projet</strong></a
+              >
+            </div>
+
+            <div
+              id="w-node-_138c1701-d088-8486-1d67-68f5d6bd7ca0-d135d194"
+              className="hero-wrapper"
+            >
+              <h1 className="hero-title mb-2 hero-mobile">
+                Je suis une entreprise
+              </h1>
+              <div className="hero-text text-base leading-4">
+                Depuis 2012, le programme Valorisation des Projets Etudiants
+                (VPE) de l’ECE permet aux élèves ingénieurs de collaborer et
+                d&#x27;accompagner les entreprises, startup, laboratoires et
+                associations sur des projets d’innovations numériques, dans une
+                création de valeur industrielle et académique partagée
+              </div>
+              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
+                ><strong className="bold-text">Proposer un projet</strong></a
               >
             </div>
           </div>

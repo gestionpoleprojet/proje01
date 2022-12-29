@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { PageWrapper } from '../components/PageWrapper'
-import TemoignagesCardList from '../components/TemoignagesCardList';
+import TemoignagesCardList from '../components/TestimonialCardList';
 import { indexQueryTestimonial, indexQueryLink } from '../lib/queries';
 import { getClient } from '../lib/sanity-server';
 import { Testimonial, Link } from '../lib/types';
@@ -307,40 +307,6 @@ export default async function Home() {
             />
           </div>
           <div className="w-layout-grid review-grid">
-            <div className="review pt-1-5 pl-2 pr-1-5625">
-              <div className="reviewer-details">
-                <div className="logo-wrapper">
-                  <div className="img-div">
-                    <img
-                      src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d1260bea1f6baa40a3711_Ellipse%201.png"
-                      loading="lazy"
-                      width="48"
-                      height="48"
-                      alt=""
-                      className="user-avatar"
-                    />
-                  </div>
-                  <div className="alumni-name">
-                    <div
-                      className="wts-imgname text-base leading-5 font-medium mt-0-125"
-                    >
-                      Valentin Lecompte
-                    </div>
-                    <div className="wtsimg-job text-sm leading-5">
-                      Fondateur de Kuantom
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              <div className="text-desc text-sm mt-1-125">
-                “Le Fablab c’est avant tout un soutien technique dans la
-                réalisation d’un produit qui a les moyens de prototyper tout ce
-                que l’on peut imaginer et concevoir. Pour Kuantom, ce fût 4 ans
-                de recherche, 4 prototypages au sein du Fablab de l’ECE et
-                maintenant 4 brevets sur le marché.
-              </div>
-            </div>
             <TemoignagesCardList testimonials = {testimonial}/>
           </div>
         </div>

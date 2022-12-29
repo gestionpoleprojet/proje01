@@ -1,7 +1,7 @@
 const postFields = ` 
   _id,
   title,
-  slug,
+  lien,
   overview,
   valorisation,
   poster,

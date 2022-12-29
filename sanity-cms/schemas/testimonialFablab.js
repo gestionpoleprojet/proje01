@@ -2,7 +2,7 @@ import {defineField, defineType} from 'sanity'
 import {MdPersonPin as icon} from 'react-icons/md'
 
 export default defineType({
-  name: 'testimonialfablab', // <-- enregistre comme 'movie' dans la base de données
+  name: 'testimonialfablab', 
   title: 'Témoignages FabLab',
   type: 'document',
   icon,
