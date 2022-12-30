@@ -260,7 +260,7 @@ export default async function Fablab() {
         </div>
         <div className="image-wrapper">
           <img
-            src="./images/barcelona.jpg"
+            src="./images/fablabopening.webp"
             loading="lazy"
             alt=""
             className="numbers-image "
@@ -271,7 +271,7 @@ export default async function Fablab() {
   </div>
 
   <div className="wf-section whitebg">
-    <div className="container-1160 w-container">
+    <div className="container-1160 w-container ">
       <div className="wtsmaindiv mt-6-125">
         <div className="card-block-wrapper">
           <div className="card-content-block">
