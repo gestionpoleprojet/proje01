@@ -32,7 +32,7 @@ const NavBar = () => {
                     className="nav-wrapper"
                 >
                     <div className="logo-wrapper">
-                        <a href="#" className="brand w-nav-brand">
+                        <Link href="/" className="brand w-nav-brand">
                             <img
                                 src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0a482b941e4e6e885124_Logo-PP-noir.png"
                                 loading="lazy"
@@ -46,7 +46,7 @@ const NavBar = () => {
                                 className="logo-image"
                             />
                             <div className="navlogo-name">Pôle Projet ECE.</div>
-                        </a>
+                        </Link>
                     </div>
                     <nav
                         role="navigation"

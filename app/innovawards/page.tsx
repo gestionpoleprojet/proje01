@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import { PageWrapper } from '../../components/PageWrapper'
 import ProjectCardList from '../../components/ProjectCardList'
 import { indexQuery } from '../../lib/queries';
@@ -41,9 +42,8 @@ export default async function Page() {
                 associations sur des projets d’innovations numériques, dans une
                 création de valeur industrielle et académique partagée
               </div>
-              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong className="bold-text">Déposer un projet</strong></a
-              >
+              <Link href="/depot_projet" className="getstarted-bttn text-2xl leading-8 w-button"
+                ><strong className="bold-text">Déposer un projet</strong></Link>
             </div>
           </div>
         </div>
@@ -106,9 +106,7 @@ export default async function Page() {
               <img
                 src="/images/barge.webp"
                 loading="lazy"
-                
-                width="943"
-            
+                width={943}
                 alt=""
                 className="wtc-image card-image aspec-ratio-16-9"
               />

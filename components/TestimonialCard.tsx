@@ -6,7 +6,7 @@ import {sanityConfig} from "../lib/sanity-config";
 export default function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
     return (
 
-<div className="review pt-1-5 pl-2 pr-1-5625">
+<div className="review">
   <div className="reviewer-details">
     <div className="logo-wrapper">
       <div className="img-div"> 
@@ -31,7 +31,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
       </div>
     </div>
   </div>
-  <div className="text-desc text-sm mt-1-125 mb-3-4375">
+  <div className="text-desc text-sm mt-1-125">
     <PortableText value={testimonial.content} {...sanityConfig} />
   </div>
 </div>

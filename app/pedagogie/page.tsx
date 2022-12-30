@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { PageWrapper } from '../../components/PageWrapper'
 
 
@@ -32,9 +33,8 @@ export default function Pedagogie() {
                 associations sur des projets d’innovations numériques, dans une
                 création de valeur industrielle et académique partagée
               </div>
-              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong className="bold-text">Déposer un projet</strong></a
-              >
+              <Link href="/depot_projet" className="getstarted-bttn text-2xl leading-8 w-button"
+                ><strong className="bold-text">Déposer un projet</strong></Link>
             </div>
           </div>
         </div>

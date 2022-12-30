@@ -162,10 +162,10 @@ export default async function Home() {
     <div className="cards-section wf-section whitebg">
       <div className="container-1060 w-container">
         <div className="w-layout-grid cards-grid">
-          <div
-            id="w-node-_5887fbfd-43c6-3892-49af-2bae7151e79d-33ac0d3b"
+
+          <a
             data-w-id="5887fbfd-43c6-3892-49af-2bae7151e79d"
-            className="card-div"
+            className="card-div w-inline-block"
           >
             
             <div className="card-mage-wrapper pt-2-875">
@@ -176,7 +176,7 @@ export default async function Home() {
                 className="image card-image"
               />
             </div>
-            <div className="card-text-block mb-2-5625 pl-1-25 pr-1-25">
+            <div className="card-text-block mb-3-4375 pl-1-25 pr-1-25">
               <div className="card-name text-3xl leading-10 font-bold mb-0-125">
                 Futur étudiants
               </div>
@@ -186,12 +186,13 @@ export default async function Home() {
                 (ECE Awards, ECE Cup)
               </div>
             </div>
-            <div className="material-icon">
-                <strong className="bold-text-2">arrow_outward</strong>
-              </div>
-          </div>
+            <div className="bold-button-card">
+            Découvrir
+                <strong className="material-icon">arrow_outward</strong>
+            </div>
+          </a>
+
           <a
-            id="w-node-_1f9cbec7-895c-2802-1aed-ffbd63ac71cf-33ac0d3b"
             data-w-id="1f9cbec7-895c-2802-1aed-ffbd63ac71cf"
             href="./innovawards.html"
             className="card-div w-inline-block"
@@ -210,7 +211,7 @@ export default async function Home() {
                 className="card-image businessman"
               />
             </div>
-            <div className="card-text-block mb-2-5625 pl-1-25 pr-1-3125">
+            <div className="card-text-block mb-3-4375 pl-1-25 pr-1-3125">
               <div className="card-name text-3xl leading-10 font-bold mb-0-125">
                 Entreprise, labos,<br />associations
               </div>
@@ -220,14 +221,14 @@ export default async function Home() {
                 Eiffel.
               </div>
             </div>
-            <div className="material-icon">
-                <strong className="bold-text-2">arrow_outward</strong>
-              </div>
-            </a
-          >
+            <div className="bold-button-card">
+            Découvrir
+                <strong className="material-icon">arrow_outward</strong>
+            </div>
+          </a>
+
           <a
             href="#"
-            id="w-node-_5887fbfd-43c6-3892-49af-2bae7151e7b5-33ac0d3b"
             data-w-id="5887fbfd-43c6-3892-49af-2bae7151e7b5"
             className="card-div w-inline-block"
           >
@@ -240,7 +241,7 @@ export default async function Home() {
                 className="card-image image test"
               />
             </div>
-            <div className="card-text-block mb-2-5625 pl-1-5625 pr-1">
+            <div className="card-text-block mb-3-4375 pl-1-5625 pr-1">
               <div className="card-name text-3xl leading-10 font-bold mb-0-125">
                 Etudiant de l&#x27;ECE
               </div>
@@ -249,10 +250,12 @@ export default async function Home() {
                 projets des années précédentes
               </div>
             </div>
-            <div className="material-icon">
-                <strong className="bold-text-2">arrow_outward</strong>
-              </div>
+            <div className="bold-button-card">
+              Découvrir
+                <strong className="material-icon">arrow_outward</strong>
+            </div>
         </a>
+
         </div>
       </div>
     </div>
