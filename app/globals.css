@@ -943,7 +943,10 @@
    }
 
    .aspect-ratio-1-1 {
-     padding-bottom: 100%;
+     aspect-ratio: 1/1;
+   }
+   .aspect-ratio-16-9 {
+     aspect-ratio: 16/9;
    }
    
    .our-number-left-block {
@@ -1205,8 +1208,8 @@
    .review-grid {
      margin-left: 10px;
      justify-items: stretch;
-     grid-column-gap: 15px;
-     grid-row-gap: 0px;
+     grid-column-gap: 18px;
+     grid-row-gap: 15px;
      -ms-grid-columns: minmax(auto, 1fr) minmax(auto, 1fr) 1fr;
      grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) 1fr;
      -ms-grid-rows: auto;

@@ -106,11 +106,11 @@ export default async function Page() {
               <img
                 src="/images/barge.webp"
                 loading="lazy"
-                height="566"
+                
                 width="943"
             
                 alt=""
-                className="wtc-image card-image"
+                className="wtc-image card-image aspec-ratio-16-9"
               />
             </div>
           </div>

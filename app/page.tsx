@@ -9,9 +9,9 @@ import { Testimonial, Link } from '../lib/types';
 
 export default async function Home() {
 
-    const testimonial: Testimonial[] = await getClient(false).fetch(indexQueryTestimonial,{ cache: 'force-cache' });
-    const link: Link = await getClient(false).fetch(indexQueryLink,{ cache: 'force-cache' });
-  
+    const testimonial: Testimonial[] = await getClient(false).fetch(indexQueryTestimonial,{ cache: 'no-cache' });
+    const link: Link[] = await getClient(false).fetch(indexQueryLink,{ cache: 'force-cache' });
+    
   return (
     <PageWrapper>
     <div className="hero-section wf-section blue-ece">
@@ -40,8 +40,8 @@ export default async function Home() {
                 start-up, laboratoires et associations, dans une création de
                 valeur industrielle et académique.
               </div>
-              <a href= {link.lien} className="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong className="bold-text">{link.texte}</strong></a
+              <a href={link[0].lien} className="getstarted-bttn text-2xl leading-8 w-button"
+                ><strong className="bold-text">{link[0].texte}</strong></a
               >
             </div>
           </div>
