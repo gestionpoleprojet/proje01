@@ -25,7 +25,7 @@ export default async function Fablab() {
           <div className="card-image-block mb-0-875">
             <img
               src="./images/trophy-printer.webp"
-              width="480"
+              width="450"
               alt="3D-icon-printer"
               className="wtc-image-large"
             />

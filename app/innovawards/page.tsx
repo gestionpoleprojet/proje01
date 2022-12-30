@@ -23,7 +23,6 @@ export default async function Page() {
             <img
               src="/images/awards.webp"
               width="540"
-              height="450"
               id="w-node-_89b30bd8-a8db-67a3-614b-b071ede6a2cf-d135d194"
               alt="couple-working-on-laptop"
               className="image-5"

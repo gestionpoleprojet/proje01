@@ -941,6 +941,10 @@
      width: 545px;
      border-radius: 12px;
    }
+
+   .aspect-ratio-1-1 {
+     padding-bottom: 100%;
+   }
    
    .our-number-left-block {
      padding-top: 66px;
@@ -1514,7 +1518,7 @@
         display: none;
      }
 
-     .getstarted-bttn.text-2xl.leading-8.small {
+     .depot-btn.small {
       display: none;
     }
 

@@ -82,7 +82,7 @@ const NavBar = () => {
                     </nav>
                     <Link
                         href="/depot_projet"
-                        className={`depot-btn  ${pathname == "/depot_projet" ? "invert-btn" : "getstarted-bttn"}`}
+                        className={`depot-btn small ${pathname == "/depot_projet" ? "invert-btn" : "getstarted-bttn"}`}
                     >
                         <strong className="bold-text">Déposer un projet</strong>
                     </Link>
