@@ -29,7 +29,7 @@ export default function Depot_Projet() {
                 (VPE) de l’ECE permet aux élèves ingénieurs de collaborer et
                 d&#x27;accompagner.
               </div>
-              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button" style={{margin: "auto"}}
+              <a href="https://vpe-ece.com" className="getstarted-bttn text-2xl leading-8 w-button" style={{margin: "auto"}}
                 ><strong className="bold-text">Proposer un projet</strong></a>
             </div>
 
@@ -52,7 +52,7 @@ export default function Depot_Projet() {
                 (VPE) de l’ECE permet aux élèves ingénieurs de collaborer et
                 d&#x27;accompagner.
               </div>
-              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button" style={{margin: "auto"}}
+              <a href="https://vpe-ece.com" className="getstarted-bttn text-2xl leading-8 w-button" style={{margin: "auto"}}
                 ><strong className="bold-text">Déposer mon projet</strong></a>
             </div>
             

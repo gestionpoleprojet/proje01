@@ -58,20 +58,12 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com.png"
+            src="./images/Partage3D_Logo.svg"
             loading="lazy"
-            width="124"
+            width="160"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 124px"
-            srcSet="
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-500.png   500w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-800.png   800w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-1080.png 1080w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-1600.png 1600w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-2000.png 2000w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-2600.png 2600w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d055fd2fd33b0ac9136_Bouygues_T%C3%A9l%C3%A9com-p-3200.png 3200w
-            "
-            alt="logo orange"
+            
+            alt="logo Partage3D"
             className="client-image orange"
           />
         </div>
@@ -80,10 +72,10 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0d36f5c38d287b14a77e_logo-onepoint.png"
+            src="./images/Zortrax_Logo.svg"
             loading="lazy"
-            width="126"
-            alt=""
+            width="120"
+            alt="Logo Zortrax"
             className="client-image orange"
           />
         </div>
@@ -92,17 +84,12 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo.png"
+            src="./images/Trotec_Logo.svg"
             loading="lazy"
-            width="100"
+            width="118"
             id="w-node-_2fdf6007-a222-4852-9f94-57c0242a3398-33ac0d3b"
-            srcSet="
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-500.png   500w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-800.png   800w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0bcb2e5f783cd669995b_Renault-Logo-p-1080.png 1080w
-            "
             sizes="(max-width: 479px) 100vw, 100px"
-            alt=""
+            alt="Logo Trotec"
             className="client-image orange"
           />
         </div>
@@ -111,17 +98,11 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg.png"
+            src="./images/Sinterit_Logo.svg"
             loading="lazy"
-            width="125"
+            width="140"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 125px"
-            srcSet="
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-500.png   500w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-800.png   800w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg-p-1080.png 1080w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0c610787c761f5eb4bfa_Capgemini_201x_logo.svg.png        1280w
-            "
-            alt=""
+            alt="Logo Sinterit"
             className="client-image orange"
           />
         </div>
@@ -130,10 +111,10 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638d0b02fbd74dabef858766_images%20(7).png"
+            src="./images/Fab_Lab_Logo.svg"
             loading="lazy"
-            width="37"
-            alt=""
+            width="55"
+            alt="Logo Fab Lab"
             className="client-image orange"
           />
         </div>
@@ -142,18 +123,11 @@ export default async function Fablab() {
           className="client--image-wrapper last_company"
         >
           <img
-            src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg.png"
+            src="./images/Partage3D_Logo.svg"
             loading="lazy"
-            width="88"
+            width="140"
             sizes="(max-width: 479px) NaNvw, 100vw"
-            srcSet="
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-500.png   500w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-800.png   800w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-1080.png 1080w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-1600.png 1600w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg-p-2000.png 2000w,
-              https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/638f15fdd218a8105571e800_Sopra_Steria_logo.svg.png        2560w
-            "
+            
             alt=""
             className="client-image orange"
           />
