@@ -110,7 +110,7 @@ export default async function Home() {
             className="client--image-wrapper"
           >
             <img
-              src="./images/CGI_Logo.svg"
+              src="./images/CGI_logo.svg"
               loading="lazy"
               width="60"
               alt=""
@@ -122,7 +122,7 @@ export default async function Home() {
             className="client--image-wrapper last_company"
           >
             <img
-              src="./images/Sopra_Steria_Logo.svg"
+              src="./images/Sopra_Steria_logo.svg"
               loading="lazy"
               width="104"
               sizes="(max-width: 479px) NaNvw, 100vw"

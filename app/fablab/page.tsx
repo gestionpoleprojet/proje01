@@ -72,7 +72,7 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="./images/Zortrax_Logo.svg"
+            src="./images/Zortrax_logo.svg"
             loading="lazy"
             width="120"
             alt="Logo Zortrax"
@@ -111,7 +111,7 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="./images/Fab_Lab_Logo.svg"
+            src="./images/Fab_Lab_logo.svg"
             loading="lazy"
             width="55"
             alt="Logo Fab Lab"
