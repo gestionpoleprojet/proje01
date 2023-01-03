@@ -1231,6 +1231,7 @@
     display: block;
     padding: 16px;
     padding-right: 0px;
+    height: fit-content;
     border-top-width: 1px;
     border-left-width: 1px;
     border-style: solid;
