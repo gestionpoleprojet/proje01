@@ -14,7 +14,7 @@
       Start of custom Webflow CSS
       ========================================================================== */
    .w-layout-grid {
-     display: -ms-grid;
+    
      display: grid;
      grid-auto-columns: 1fr;
      -ms-grid-columns: 1fr 1fr;
@@ -848,10 +848,13 @@
      justify-content: center;
      justify-items: stretch;
      grid-column-gap: 90px;
+      grid-row-gap: 30px;
      -ms-grid-columns: auto auto auto;
      grid-template-columns: auto auto auto;
      -ms-grid-rows: auto;
      grid-template-rows: auto;
+     display: flex;
+     flex-wrap: wrap;
    }
    
    .card-txt.text-sm.leading-4 {
@@ -1146,7 +1149,7 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     width: 100%;
+     width: -webkit-fill-available;
      margin: 10px 20px 10px 0px;
      -webkit-box-orient: horizontal;
      -webkit-box-direction: normal;
@@ -1168,7 +1171,7 @@
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
-     margin-left: -15px;
+     
      -webkit-box-align: end;
      -webkit-align-items: flex-end;
      -ms-flex-align: end;
@@ -1235,7 +1238,7 @@
     border-top-width: 1px;
     border-left-width: 1px;
     border-style: solid;
-    min-width: 341px;
+    min-width: 280px;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -webkit-flex-direction: column;
@@ -1384,11 +1387,12 @@
      mix-blend-mode: normal;
    }
    
-   .client-image.orange:hover {
+   .client-image-wrapper:hover  .client-image.orange {
      opacity: 1;
      -webkit-filter: grayscale(0%);
      filter: grayscale(0%);
-   }
+   }  
+    
    
    .client-image.orange:focus {
      opacity: 1;
@@ -1583,6 +1587,25 @@
        -ms-flex-align: center;
        align-items: center;
      }
+
+     .card-block-wrapper {
+      width: -webkit-fill-available;
+      margin-right: 0px;
+      margin-left: 18px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: center;
+      align-items: flex-start;
+      -webkit-align-self: center;
+      -ms-flex-item-align: flex-start;
+      -ms-grid-row-align: center;
+      align-self: center;
+    }
    
      .review-grid {
        -ms-grid-columns: auto;
@@ -1595,7 +1618,23 @@
      }
 
    }
-   
+   @media screen and (max-width: 679px) {
+   .client-image-wrapper {
+       grid-column-gap: 16px;
+       -ms-grid-columns: auto auto auto;
+       grid-template-columns: auto auto auto;
+     }
+     .client--image-wrapper.last_company {
+       display: block;
+     }
+
+     .numbers-grid {
+      margin-top: 40px;
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+    }
+    }
+
    @media screen and (max-width: 479px) {
     
    
@@ -1773,11 +1812,7 @@
        object-fit: fill;
      }
    
-     .client-image-wrapper {
-       grid-column-gap: 16px;
-       -ms-grid-columns: auto auto auto;
-       grid-template-columns: auto auto auto;
-     }
+     
    
      .cards-grid {
        margin-top: 40px;
@@ -1786,8 +1821,12 @@
        -ms-flex-pack: center;
        justify-content: center;
        grid-column-gap: 0px;
+        grid-row-gap: 30px;
        -ms-grid-columns: auto;
        grid-template-columns: auto;
+       display: flex;
+       flex-wrap: wrap;
+
      }
    
      .wtc-image {
@@ -1877,11 +1916,7 @@
        font-size: 1rem;
      }
    
-     .numbers-grid {
-       margin-top: 40px;
-       -ms-grid-columns: auto;
-       grid-template-columns: auto;
-     }
+    
    
      .blog-brid {
        -webkit-box-pack: center;
@@ -1932,24 +1967,7 @@
        line-height: 2.6rem;
      }
    
-     .card-block-wrapper {
-       width: 100%;
-       margin-right: 0px;
-       margin-left: 0px;
-       -webkit-box-orient: vertical;
-       -webkit-box-direction: reverse;
-       -webkit-flex-direction: column-reverse;
-       -ms-flex-direction: column-reverse;
-       flex-direction: column-reverse;
-       -webkit-box-align: center;
-       -webkit-align-items: center;
-       -ms-flex-align: center;
-       align-items: center;
-       -webkit-align-self: center;
-       -ms-flex-item-align: center;
-       -ms-grid-row-align: center;
-       align-self: center;
-     }
+     
    
      .wtsmaindiv.mt-6-125 {
        margin-top: 40px;
@@ -2134,9 +2152,7 @@
        mix-blend-mode: luminosity;
      }
    
-     .client--image-wrapper.last_company {
-       display: block;
-     }
+     
    
      .message-icon-image {
        margin-bottom: -12px;

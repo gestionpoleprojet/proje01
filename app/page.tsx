@@ -84,7 +84,7 @@ export default async function Home() {
             <img
               src="./images/Airbus_Logo.svg"
               loading="lazy"
-              width="122"
+              width="112"
               id="w-node-_2fdf6007-a222-4852-9f94-57c0242a3398-33ac0d3b"
               
               sizes="(max-width: 479px) 100vw, 100px"
