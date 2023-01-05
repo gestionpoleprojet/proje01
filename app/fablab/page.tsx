@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import { PageWrapper } from '../../components/PageWrapper';
 import TestimonialCardList from '../../components/TestimonialCardList';
@@ -57,15 +58,16 @@ export default async function Fablab() {
           id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d69-33ac0d3b"
           className="client--image-wrapper"
         >
+          <a href="https://partage3d.fr/" target="_blank">
           <img
             src="./images/Partage3D_Logo.svg"
             loading="lazy"
             width="160"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 124px"
-            
             alt="logo Partage3D"
             className="client-image orange"
           />
+          </a>
         </div>
         <div
           id="w-node-c4f8d844-2e7f-268b-fe01-c514c4a324e3-33ac0d3b"
@@ -122,6 +124,7 @@ export default async function Fablab() {
           id="w-node-_47069b56-0c47-2b92-a3bb-76b2a327321a-33ac0d3b"
           className="client--image-wrapper last_company"
         >
+          <a href="https://partage3d.fr/" target="_blank">
           <img
             src="./images/Partage3D_Logo.svg"
             loading="lazy"
@@ -131,6 +134,7 @@ export default async function Fablab() {
             alt=""
             className="client-image orange"
           />
+          </a>
         </div>
       </div>
     </div>

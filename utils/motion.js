@@ -24,7 +24,7 @@ export const navItems = {
       name: 'Accueil',
       x: 0,
       y: 0,
-      w: '94px',
+      w: '93px',
   },
   '/pedagogie':{
       name: 'Pédagogie',

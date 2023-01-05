@@ -11,7 +11,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
     <div className="logo-wrapper">
       <div className="img-div"> 
         <img
-          src={imageUrlFor(testimonial.poster).ignoreImageParams().width(48).toString()}
+          src={imageUrlFor(testimonial.poster).ignoreImageParams().width(96).toString()}
           loading="lazy"
           alt=""
           height="48"

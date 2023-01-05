@@ -862,7 +862,8 @@
    }
    
    .card-div {
-     width: 270px;
+     max-width: 280px;
+     width: -webkit-fill-available;
      border-radius: 16px;
      background-color: #f7fafd;
      color: #2d2d2d;
@@ -1826,6 +1827,7 @@
        grid-template-columns: auto;
        display: flex;
        flex-wrap: wrap;
+       margin-inline: 10px;
 
      }
    
