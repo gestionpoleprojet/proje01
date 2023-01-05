@@ -255,7 +255,7 @@ export default async function Fablab() {
           <div className="card-content-block">
             <h2 className="wts-head">Qu&#x27;en disent t&#x27;ils ?</h2>
             <div className="wts-text text-sm leading-5">
-              2500 alumni sont passés par le Fablab
+              +3500 étudiants et intervenants sont passés par le Fablab
             </div>
           </div>
           
