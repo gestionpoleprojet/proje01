@@ -31,8 +31,7 @@ export default async function Home() {
               className="hero-wrapper"
             >
               <h1 className="hero-title mb-2 hero-mobile">
-                Developpons l&#x27;excellence de la pedagogie transversale par
-                projets
+                Developpons l&#x27;excellence de la pedagogie transversale par projets
               </h1>
               <div className="hero-text text-base leading-4">
                 Permettre aux élèves-ingénieurs de collaborer sur des projets
@@ -252,11 +251,11 @@ export default async function Home() {
             >
           </div>
           
-          <div className="image-wrapper">
+          <div className="image-wrapper heading-2" >
           <img
-            src="./images/chiffres.jpg"
+            src="./images/numbers.jpg"
             loading="lazy"
-            width="93%"
+            width="75%"
             alt=""
             className=" "
           />

@@ -40,7 +40,7 @@ export const navItems = {
   },
   '/fablab':{
       name: 'Fablab',
-      x: 367,
+      x: 365,
       y: 0,
       w: '92px',
   },
