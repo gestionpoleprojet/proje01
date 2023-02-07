@@ -1,16 +1,17 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import { PageWrapper } from '../components/PageWrapper'
 import TemoignagesCardList from '../components/TestimonialCardList';
 import { indexQueryTestimonial, indexQueryLink } from '../lib/queries';
 import { getClient } from '../lib/sanity-server';
-import { Testimonial, Link } from '../lib/types';
+import { Testimonial, Links } from '../lib/types';
 
 
 
 export default async function Home() {
 
     const testimonial: Testimonial[] = await getClient(false).fetch(indexQueryTestimonial,{ cache: 'no-cache' });
-    const link: Link[] = await getClient(false).fetch(indexQueryLink,{ cache: 'force-cache' });
+    const link: Links[] = await getClient(false).fetch(indexQueryLink,{ cache: 'force-cache' });
     
   return (
     <PageWrapper>
@@ -39,9 +40,9 @@ export default async function Home() {
                 start-up, laboratoires et associations, dans une création de
                 valeur industrielle et académique.
               </div>
-              <a href={link[0].lien} className="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong className="bold-text">{link[0].texte}</strong></a
-              >
+              <a href={link[1].lien} className="getstarted-bttn text-2xl leading-8 w-button">
+                <strong className="bold-text">{link[1].texte}</strong>
+              </a>
             </div>
           </div>
         </div>
@@ -159,10 +160,10 @@ export default async function Home() {
                 (ECE Awards, ECE Cup)
               </div>
             </div>
-            <div className="bold-button-card">
+            <Link href="/pedagogie" className="bold-button-card">
             Découvrir
                 <strong className="material-icon">arrow_outward</strong>
-            </div>
+            </Link>
           </a>
 
           <a
@@ -194,10 +195,10 @@ export default async function Home() {
                 Eiffel.
               </div>
             </div>
-            <div className="bold-button-card">
+            <Link href="/innovawards" className="bold-button-card">
             Découvrir
                 <strong className="material-icon">arrow_outward</strong>
-            </div>
+            </Link>
           </a>
 
           <a
@@ -223,10 +224,10 @@ export default async function Home() {
                 projets des années précédentes
               </div>
             </div>
-            <div className="bold-button-card">
+            <Link href="/fablab" className="bold-button-card">
               Découvrir
                 <strong className="material-icon">arrow_outward</strong>
-            </div>
+            </Link>
         </a>
 
         </div>
@@ -245,10 +246,10 @@ export default async function Home() {
               création de valeur industrielle et académique partagée.
             </p>
             <a
-              href="#"
-              className="letstalk-bttn text-2xl leading-8 font-bold pt-1-1875 pb-0-8125 pl-3-8125 pr-3-9375 w-button"
-              >Décourvrir la pédagogie</a
-            >
+              href="/pedagogie"
+              className="letstalk-bttn text-2xl leading-8 font-bold pt-1-1875 pb-0-8125 pl-3-8125 pr-3-9375 w-button">
+               Décourvrir la pédagogie
+            </a>
           </div>
           
           <div className="image-wrapper heading-2" >

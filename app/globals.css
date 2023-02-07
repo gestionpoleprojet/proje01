@@ -179,6 +179,7 @@
      font-size: 1.375rem;
    }
    
+
    .leading-2 {
      line-height: 2rem;
    }
@@ -974,6 +975,7 @@
       margin-bottom: 40px;
      grid-column-gap: 40px;
      grid-row-gap: 20px;
+
      -ms-grid-rows: auto;
      grid-template-rows: auto;
      align-items: end;

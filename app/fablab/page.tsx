@@ -3,20 +3,15 @@ import Image from 'next/image'
 import { PageWrapper } from '../../components/PageWrapper';
 import TestimonialCardList from '../../components/TestimonialCardList';
 import TestimonialCard from '../../components/TestimonialCard';
-import { indexQueryTestimonialFablab } from '../../lib/queries';
+import { indexQueryLink, indexQueryTestimonialFablab } from '../../lib/queries';
 import { getClient } from '../../lib/sanity-server';
-import { Testimonial } from '../../lib/types';
+import { Links, Testimonial } from '../../lib/types';
 
 export default async function Fablab() {
 
-  async function getTestimonials() {
     const testimonials: Testimonial[] = await getClient(false).fetch(indexQueryTestimonialFablab,{ cache: 'no-cache' });
-    return testimonials;
-  }
-  
-  const testimonials: Testimonial[] = await getTestimonials();
-  console.log(testimonials);
-  
+    const link: Links[] = await getClient(false).fetch(indexQueryLink,{ cache: 'force-cache' });
+
   return (
   <PageWrapper>
   <div className="hero-section wf-section red-fablab">
@@ -39,13 +34,12 @@ export default async function Fablab() {
               Un atelier dernière génération pour vos projets
             </h1>
             <div className="hero-text text-base leading-4">
-              
-              Ouvert aux étudiants ainsi qu’aux entreprises à la recherche de solutions de prototypage rapide permettant de donner vie à leur idées.<br></br>
-              Il équipé d’outils traditionnels et numériques comme des imprimantes 3D, découpes laser et fraiseuses à commande numériques
+              Un espace ouvert aux étudiants ainsi qu’aux entreprises à la recherche de solutions de prototypage rapide permettant de donner vie à leurs idées.<br></br>
+              Le Fablab est équipé d’outils traditionnels et numériques comme des imprimantes 3D, découpes laser et fraiseuses à commande numériques.
             </div>
-            <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
-              ><strong className="bold-text">Réserver une machine</strong></a
-            >
+            <a href={link[0].lien} className="getstarted-bttn text-2xl leading-8 w-button">
+              <strong className="bold-text">{link[0].texte}</strong>
+            </a>
           </div>
         </div>
       </div>
@@ -58,16 +52,16 @@ export default async function Fablab() {
           id="w-node-_25ea5eca-f367-2a8c-c26d-9c724e966d69-33ac0d3b"
           className="client--image-wrapper"
         >
-          <a href="https://partage3d.fr/" target="_blank">
+          
           <img
-            src="./images/Partage3D_Logo.svg"
+            src="./images/CIF.svg"
             loading="lazy"
-            width="160"
+            width="102"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 23vw, 124px"
             alt="logo Partage3D"
             className="client-image orange"
           />
-          </a>
+        
         </div>
         <div
           id="w-node-c4f8d844-2e7f-268b-fe01-c514c4a324e3-33ac0d3b"
@@ -113,10 +107,10 @@ export default async function Fablab() {
           className="client--image-wrapper"
         >
           <img
-            src="./images/Fab_Lab_logo.svg"
+            src="./images/ELEGOO.svg"
             loading="lazy"
-            width="55"
-            alt="Logo Fab Lab"
+            width="115"
+            alt="Logo ELEGOO"
             className="client-image orange"
           />
         </div>
@@ -162,16 +156,14 @@ export default async function Fablab() {
               Circuits imprimés
             </div>
             <div className="card-txt text-sm leading-4">
-              Découvrez notre pédagogie par projets et le programme de
-              l&#x27;école.<br />Participez dès maintenant à nos événements
-              (ECE Awards, ECE Cup)
+            Technologies pour vos projets en électronique, systèmes embarqués et en IOT.
             </div>
           </div>
         </div>
-        <a
+        <div
           id="w-node-_1f9cbec7-895c-2802-1aed-ffbd63ac71cf-33ac0d3b"
           data-w-id="1f9cbec7-895c-2802-1aed-ffbd63ac71cf"
-          href="#"
+          
           className="card-div w-inline-block"
           >
           <div className="card-mage-wrapper pt-2-875">
@@ -189,11 +181,9 @@ export default async function Fablab() {
               Découpes laser
             </div>
             <div className="card-txt text-sm leading-4">
-              Proposez un projet à nos étudiants.<br />Entrez en contact avec
-              nous. Ou bien découvrez nos formations et le Fablab du campus
-              Eiffel.
+            Découpages et gravures rapides et simples sur différents matériaux: bois, plastique, carton, verre, cuir...
             </div>
-          </div></a
+          </div></div
         >
         <div
           id="w-node-_5887fbfd-43c6-3892-49af-2bae7151e7b5-33ac0d3b"
@@ -214,8 +204,7 @@ export default async function Fablab() {
               Impressions 3D
             </div>
             <div className="card-txt text-sm leading-4">
-              Déposez votre projet, Réservez le Fablab ou Découvrez les
-              projets des années précédentes
+            Donner forme à projets et découvrez toutes les possibilités en impression 3D.
             </div>
           </div>
         </div>
@@ -226,9 +215,9 @@ export default async function Fablab() {
     <div className="container-1060 w-container">
       <div className="w-layout-grid numbers-grid">
         <div className="our-number-left-block">
-          <h2 className="wts-head">Les ECE Makers</h2>
+          <h2 className="wts-head">Un espace de partage</h2>
           <p className="our-numpara mt-1-75 mb-2-75">
-            Le FabLab “ECE Makers“ c’est également un espace d’exposition des projets et plus largement un espace de rencontres, de collaborations et de créations pour bénéficier de conseils et d’expertises ou pour trouver réponse à ses questions. Son équipe, les “ ECE Makers “, sont des élèves-ingénieurs prêts à vous accueillir et à vous aider dans la réalisation de vos projets (prototypes, petites séries).
+          Le FabLab, c’est également un espace d’exposition des projets et plus largement un espace de rencontres, de collaborations et de créations pour bénéficier de conseils et d’expertises ou pour trouver réponse à ses questions.
           </p>
           <a
             href="#"

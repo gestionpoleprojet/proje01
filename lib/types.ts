@@ -24,7 +24,7 @@ export type Project = {
     role: string;
   };
 
-  export type Link = {
+  export type Links = {
     _id: string;
     lien: string;
     texte: string;
