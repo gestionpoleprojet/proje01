@@ -3,7 +3,7 @@ export default function Head() {
     <>
       
       <meta charSet="utf-8" />
-      <title>Contactez le Pole projet --{">"} contact@poleprojet.ece.fr</title>
+      <title>Contactez le Pole projet --&gt; contact@poleprojet.ece.fr</title>
       <meta name="description" content="Contactez nous dès maintenant" />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <link
