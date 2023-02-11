@@ -204,7 +204,7 @@ export default async function Fablab() {
               Impressions 3D
             </div>
             <div className="card-txt text-sm leading-4">
-            Donner forme à projets et découvrez toutes les possibilités en impression 3D.
+            Donner forme à vos projets et découvrez toutes les possibilités en impression 3D.
             </div>
           </div>
         </div>
