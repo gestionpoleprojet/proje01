@@ -26,10 +26,10 @@ export default function Contact() {
               </h1>
               <div className="hero-text text-base leading-4">
                 Que vous soyez une entreprises, une startup, un laboratoire ou une
-                associations. Nous seront ravis de collaborer sur des projets d’innovations numériques.
+                association. Nous serons ravis de collaborer sur des projets d’innovations numériques.
               </div>
-              <a href="#" className="getstarted-bttn text-2xl leading-8 w-button"
-                ><strong className="bold-text">contact@poleprojet.ece.fr</strong></a
+              <a href="mail:contact@poleprojets.ece.fr" className="getstarted-bttn text-2xl leading-8 w-button"
+                ><strong className="bold-text">contact.poleprojets@ece.fr</strong></a
               >
             </div>
           </div>
