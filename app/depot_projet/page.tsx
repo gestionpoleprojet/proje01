@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { PageWrapper } from '../../components/PageWrapper'
 
 export default function Depot_Projet() {
@@ -31,6 +32,8 @@ export default function Depot_Projet() {
               </div>
               <a href="https://vpe-ece.com" className="getstarted-bttn text-2xl leading-8 w-button" style={{margin: "auto"}}
                 ><strong className="bold-text">Proposer un projet</strong></a>
+                <Link href="https://vpe-ece.com" className="text-2xl leading-8" style={{margin: "auto", color: "white", padding:" 14px 18px", borderRadius: "20px"}}
+                ><strong className="bold-text">Découvrir les associations</strong></Link>
             </div>
 
             <img
@@ -38,7 +41,8 @@ export default function Depot_Projet() {
                 width="540"
               id="w-node-_89b30bd8-a8db-67a3-614b-b071ede6a2cf-d135d194"
               alt="couple-working-on-laptop"
-              className="image-5"
+              className="image-7"
+              
             />
             <div
               id="w-node-_138c1701-d088-8486-1d67-68f5d6bd7ca0-d135d194"
