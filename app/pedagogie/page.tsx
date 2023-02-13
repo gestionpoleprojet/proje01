@@ -33,7 +33,7 @@ export default function Pedagogie() {
                 associations sur des projets d’innovations numériques, dans une
                 création de valeur industrielle et académique partagée
               </div>
-              <Link href="/depot_projet" className="getstarted-bttn text-2xl leading-8 w-button"
+              <Link href="https://vpe-ece.com" className="getstarted-bttn text-2xl leading-8 w-button"
                 ><strong className="bold-text">Déposer un projet</strong></Link>
             </div>
           </div>
