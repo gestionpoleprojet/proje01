@@ -273,7 +273,7 @@ export default async function Home() {
             <div className="card-content-block">
               <h2 className="wts-head">Qu&#x27;en disent t&#x27;ils ?</h2>
               <div className="wts-text text-sm leading-5">
-                2500 alumni sont passés par le pôle projets
+                2500 alumnis sont passés par le pôle projets
               </div>
             </div>
             <img
