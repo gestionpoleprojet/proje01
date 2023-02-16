@@ -2582,7 +2582,7 @@
     .button-1 {
       position: relative;
       top: 83px;
-      width: 183px;
+      width: 200px;
       height: 39px;
       margin-top: 40px;
       margin-bottom: 0px;
@@ -2618,8 +2618,8 @@
     }
     
     .image-18-end {
-      margin-top: -46px;
-      margin-left: -161px;
+      margin-top: -60px;
+      margin-left: -175px;
       padding-left: 0px;
     }
     
@@ -5514,7 +5514,7 @@
       .image-27 {
         position: static;
         top: -347px;
-        margin: 9px 0px 0px 85px;
+        margin: 9px 0px 0px 65px;
         padding-top: 0px;
         padding-bottom: 0px;
         float: none;

@@ -32,7 +32,7 @@ export default function Depot_Projet() {
               </div>
               <a href="https://vpe-ece.com" className="getstarted-bttn text-2xl leading-8 w-button" style={{margin: "auto"}}
                 ><strong className="bold-text">Proposer un projet</strong></a>
-                <Link href="https://vpe-ece.com" className="text-2xl leading-8" style={{margin: "auto", color: "white", padding:" 14px 18px", borderRadius: "20px"}}
+                <Link href="/associations" className="text-2xl leading-8" style={{margin: "auto", color: "white", padding:" 14px 18px", borderRadius: "20px"}}
                 ><strong className="bold-text">Découvrir les associations</strong></Link>
             </div>
 
