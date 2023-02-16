@@ -4424,6 +4424,7 @@
   
     .wtc-heading-pedag.mb-1-875.mt-1-75-pedag {
       padding-left: 64px;
+      margin-top: 200px;
     }
   
     .wtc-right-block-pedag {
@@ -5514,7 +5515,7 @@
       .image-27 {
         position: static;
         top: -347px;
-        margin: 9px 0px 0px 65px;
+        margin: 9px 0px 0px 75px;
         padding-top: 0px;
         padding-bottom: 0px;
         float: none;
@@ -5546,7 +5547,7 @@
         position: static;
         left: 45px;
         top: 61px;
-        margin: 81px -154px -131px 46px;
+        margin: 81px -154px -115px 46px;
         padding-top: 0px;
         font-size: 32px;
         font-weight: 700;
