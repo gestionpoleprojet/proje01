@@ -9,11 +9,12 @@ export type Project = {
     lien: string;
   };
 
-  export type CrewMember = {
+  export type Teacher = {
     _id: string;
     name: string;
     role: string;
     profilePicture: string;
+    link: string;
   };
 
   export type Testimonial = {

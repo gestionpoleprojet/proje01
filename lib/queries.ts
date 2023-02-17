@@ -16,6 +16,14 @@ const testiFields = `
   poster,
 `;
 
+const teacherFields = `
+  _id,
+  name,
+  role,
+  profilePicture,
+  link,
+`;
+
 const linkFields = ` 
   _id,
   lien,
@@ -30,6 +38,11 @@ export const indexQuery = `
 export const indexQueryTestimonial = `
 *[_type == "testimonial"] | order(date desc, _updatedAt desc) {
   ${testiFields}
+}`;
+
+export const indexQueryTeacher = `
+*[_type == "teacher"] | order(date desc, _updatedAt desc) {
+  ${teacherFields}
 }`;
 
 export const indexQueryTestimonialFablab = `

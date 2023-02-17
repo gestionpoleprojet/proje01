@@ -1,10 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { PageWrapper } from '../../components/PageWrapper'
-//import './page.css'
+import TeacherList from '../../components/TeachersList';
+import { indexQueryTeacher } from '../../lib/queries';
+import { getClient } from '../../lib/sanity-server';
+import { Teacher } from '../../lib/types';
 
+export default async function Pedagogie() {
 
-export default function Pedagogie() {
+  const teachers: Teacher[] = await getClient(false).fetch(indexQueryTeacher,{ cache: 'no-cache' });
 
   return (
 
@@ -48,127 +52,7 @@ export default function Pedagogie() {
                       <div className="w-layout-grid-2 wtc-grid-copy-pedag">
                         <div className="wtc-right-block-pedag">
                           <h2 className="wtc-heading-pedag mb-1-875 mt-1-75-pedag">L'équipe</h2>
-                          <div className="list-div-pedag mt-1-875-pedag">
-                            <div className="logo-wrapper-pedag mb-3-75">
-                              <div id="w-node-cdaa14f1-b45e-7952-0e6c-dceed8fe8903-d135d194" className="wts-carddiv-test-pedag pt-1-5 pl-2 pr-1-5625">
-                                <div className="reviewer-details-pedag">
-                                  <div className="logo-wrapper-pedag date">
-                                    <div className="_2textblock-pedag">
-                                      <a href = "https://www.linkedin.com/in/olivier-girinsky-a5801b5b/">
-                                        <img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" 
-                                        loading="lazy" 
-                                        width={24} 
-                                        alt="LinkedIn" 
-                                        className="image-14-1"/>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div id="w-node-d99a518d-504b-b931-cb83-55a2e8ea3e6a-d135d194" className="wts-carddiv-test-copy pt-1-5 pl-2 pr-1-5625">
-                                  <div className="reviewer-details-pedag">
-                                    <div className="logo-wrapper-pedag date"><img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2e91f5f306e402c9939c8_Equipe3.png" loading="lazy" width={176} alt="" />
-                                      <div className="_2textblock-pedag">
-                                        <div className="equipe-text1 text-base leading-5 font-medium mt-0-125">
-                                        <a href = "https://www.linkedin.com/in/olivier-girinsky-a5801b5b/">
-                                          <strong>Olivier Girinsky<br />‍</strong></a></div>
-                                        <div className="text-block-4-copy"><strong>Projets et
-                                          Valorisation</strong></div>
-                                          <a href = "https://www.linkedin.com/in/olivier-girinsky-a5801b5b/">
-                                          <img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" loading="lazy" alt="LinkedIn" className="image-25" />
-                                          </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="wts-carddiv-test-pedag pt-1-5 pl-2 pr-1-5625">
-                                <div className="reviewer-details-pedag">
-                                  <div className="logo-wrapper-pedag date">
-                                    <div className="_2textblock-2-pedag">
-                                    <a href = "https://www.linkedin.com/in/stephanie-le-marec-08677297/">
-                                      <img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" 
-                                      loading="lazy" width={24} 
-                                      alt="LinkedIn" 
-                                      className="image-14-2" />
-                                    </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div id="w-node-f7b80001-608f-7491-b8f2-9d99df7f2dcf-d135d194" className="wts-carddiv-test-copy pt-1-5 pl-2 pr-1-5625">
-                                  <div className="reviewer-details-pedag">
-                                    <div className="logo-wrapper-pedag date"><img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2e91ffe5e829a210403ca_Equipe4.png" loading="lazy" width={176} alt="" className="image-lemarec" />
-                                      <div className="_2textblock-pedag">
-                                        <div className="equipe-text1 text-base leading-5 font-medium mt-0-125">
-                                        <a href = "https://www.linkedin.com/in/stephanie-le-marec-08677297/">
-                                          <strong>Stéphanie Le Marec</strong>
-                                        </a>
-                                      </div>
-                                        <div id="w-node-_31d4b3fb-16b1-73a4-d455-9566db89703d-d135d194" className="text-block-4"><strong>Responsable
-                                          Coordination</strong></div><img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" loading="lazy" alt="" className="image-25-copy" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div id="w-node-eee72d6e-8b5b-f937-6c4c-5f01ae948ebf-d135d194">
-                                <div className="wts-carddiv-test-pedag pt-1-5 pl-2 pr-1-5625">
-                                  <div className="reviewer-details-pedag">
-                                    <div className="logo-wrapper-pedag date">
-                                      <div className="_2textblock-2-pedag">
-                                      <a href = "https://www.linkedin.com/in/wafaesebbata/">
-                                        <img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" loading="lazy" width={24} alt="LinkedIn" className="image-linkedin14" />
-                                      </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div id="w-node-_7425f805-649a-86ed-de3a-ca07f97b5869-d135d194" className="wts-carddiv-test-copy pt-1-5 pl-2 pr-1-5625">
-                                    <div className="reviewer-details-pedag">
-                                      <div className="logo-wrapper-pedag date"><img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2e91fddd31954392de3e7_Equipe2.png" loading="lazy" width={176} alt="LinkedIn" className="image-26" />
-                                        <div className="_2textblock-pedag">
-                                          <div className="equipe-text1 text-base leading-5 font-medium mt-0-125">
-                                            <a href = "https://www.linkedin.com/in/wafaesebbata/"><strong>Wafae Sebbata</strong>
-                                            </a>
-                                          </div>
-                                          <div className="text-block-4"><strong>Responsable
-                                            Robotique</strong></div><img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" loading="lazy" alt="LinkedIn" className="image-25-copy-copy" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div id="w-node-e25563a9-b4eb-be44-7326-6398802c3f49-d135d194">
-                                <div className="wts-carddiv-test-pedag pt-1-5 pl-2 pr-1-5625">
-                                  <div className="reviewer-details-pedag">
-                                    <div className="logo-wrapper-pedag date">
-                                      <div className="_2textblock-2-pedag">
-                                      <a href = "https://www.linkedin.com/in/daniel-buruian-5a8b166/">
-                                        <img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" loading="lazy" width={24} alt="LinkedIn" className="image-14-4" />
-                                      </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div id="w-node-de39ec10-89f2-d239-af17-7295468b0bb8-d135d194" className="wts-carddiv-test-copy pt-1-5 pl-2 pr-1-5625">
-                                    <div className="reviewer-details-pedag">
-                                      <div className="logo-wrapper-pedag date">
-                                        <img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2e91fddd31922272de3e5_Equipe1.png" loading="lazy" width={176} alt="" />
-                                        <div className="_2textblock-pedag">
-                                          <div className="equipe-text1 text-base leading-5 font-medium mt-0-125">
-                                          <a href = "https://www.linkedin.com/in/daniel-buruian-5a8b166/">
-                                          
-                                           <strong>Daniel Buruian</strong>
-                                          </a>
-                                          </div>
-                                          <div className="text-block-4"><strong>Fablab Manager</strong>
-                                          </div><img src="https://uploads-ssl.webflow.com/638d06865fd2fdfa5dac0d33/63a2f46ca12984c7764f509e_linkedin.svg" loading="lazy" alt="" className="image-25-copy-copy" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <TeacherList teachers={teachers} />
                         </div>
                       </div>
                     </div>
