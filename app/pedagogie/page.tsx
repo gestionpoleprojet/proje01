@@ -44,10 +44,10 @@ export default function Pedagogie() {
           </div>
               <div className="wf-section">
                   <div className="container-1060-pedag w-container">
-                    <div className="wtc-maindiv-pedag">
-                      <div className="w-layout-grid-2 wtc-grid-copy-pedag">
-                        <div className="wtc-right-block-pedag">
-                          <h2 className="wtc-heading-pedag mb-1-875 mt-1-75-pedag">L'équipe</h2>
+                  <div className="wtc-maindiv-pedag">
+                    <div className="w-layout-grid-2 wtc-grid-copy-pedag">
+                      <div className="wtc-right-block-pedag">
+                        <h2 className="wtc-heading-pedag mb-1-875 mt-1-75-pedag">L'équipe</h2>
                           <div className="list-div-pedag mt-1-875-pedag">
                             <div className="logo-wrapper-pedag mb-3-75">
                               <div id="w-node-cdaa14f1-b45e-7952-0e6c-dceed8fe8903-d135d194" className="wts-carddiv-test-pedag pt-1-5 pl-2 pr-1-5625">
