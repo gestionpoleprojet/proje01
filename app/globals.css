@@ -594,16 +594,16 @@
     display: -ms-flexbox;
     display: flex;
     height: 500px;
-    margin: 10px -120px 40px;
+    margin: 12px -120px 12px;
     padding-right: 66px;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    border-style: none;
-    border-color: #000;
+    border-style: solid;
+    border-color: #e5e7eb;
     border-radius: 25px;
-    box-shadow: 1px 1px 4px 0 #000;
+    border-width: 2px;
   }
   
   .asso-divblock1.asso-divblock-gros {
@@ -648,7 +648,7 @@
   
   .asso-image {
     margin-top: 73px;
-    margin-left: 186px;
+    margin-left: 96px;
     border-radius: 10px;
   }
   
@@ -792,6 +792,10 @@
      align-items: center;
      grid-column-gap: 1.5rem;
      grid-row-gap: 1.5rem;
+   }
+
+   .profilepic {
+    position: relative;
    }
 
    .logo-wrapper-pedag.date {
@@ -1411,6 +1415,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
   }
      .name-div.ml-0-875 {
      display: -webkit-box;
@@ -2153,6 +2158,7 @@
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
+      position: relative;
     }
     
     .equipe-text1.text-base.leading-5.font-medium.mt-0-125 {
@@ -2347,9 +2353,14 @@
     }
     
     .image-14-1 {
-      margin: 214px -21px 19px 31px;
-      padding-top: 0px;
-      padding-left: 0px;
+      position: absolute;
+      background-color: #222222;
+      border-radius: 100%;
+      padding: 5px;
+      top:178px;
+      left:35px;
+      z-index: 1;
+      
     }
     
     .columns {
@@ -3034,7 +3045,13 @@
     }
     
     .image-25 {
-      display: none;
+      position: absolute;
+      left: 38px;
+      top: 156px;
+      display: block;
+      background-color: #222222;
+      border-radius: 100%;
+      padding: 5px;
     }
     
     .image-25-copy {
@@ -4202,10 +4219,7 @@
       grid-template-rows: auto;
     }
     
-    .image-25 {
-      display: none;
-    }
-    
+
     .image-25-copy {
       display: none;
     }
@@ -5175,10 +5189,7 @@
       width: 600px;
       margin-right: -561px;
     }
-  
-    .image-25 {
-      display: none;
-    }
+
   
     .image-25-copy {
       display: none;
@@ -5961,9 +5972,7 @@
         margin-right: 0px;
       }
     
-      .image-25 {
-        display: none;
-      }
+    
     
       .image-25-copy {
         display: none;
@@ -6238,7 +6247,7 @@
     }
   
     .logo-wrapper-pedag.date {
-      display: block;
+      display: flex;
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
@@ -7489,10 +7498,13 @@
     }
   
     .image-25 {
-      position: relative;
-      left: -14px;
-      top: -49px;
+      position: absolute;
+      left: 38px;
+      top: 156px;
       display: block;
+      background-color: #222222;
+      border-radius: 100%;
+      padding: 5px;
     }
   
     .image-25-copy {
