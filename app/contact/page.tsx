@@ -56,8 +56,8 @@ export default function Contact() {
                 Des questions ? Contactez-nous !
               </h1>
               <div className="hero-text text-base leading-4">
-                Que vous soyez une entreprises, une startup, un laboratoire ou une
-                association. Nous serons ravis de collaborer sur des projets d’innovations numériques.
+                Que vous soyez une entreprise, une startup, un laboratoire ou une
+                association, nous serons ravis de collaborer sur des projets d’innovations numériques.
               </div>
               <a href="mailto:contact@poleprojets.ece.fr" className="getstarted-bttn text-2xl leading-8 w-button"
                 ><strong className="bold-text">contact.poleprojets@ece.fr</strong></a
